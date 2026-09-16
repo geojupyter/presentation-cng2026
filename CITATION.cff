@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite it using the metadata from this file.
+
+title: "GeoJupyter @ CNG26"  # TODO: Real title
+url: "https://geojupyter.github.io/presentation-cng2026/"
+repository-code: "https://github.com/geojupyter/presentation-cng2026"
+# doi: "TODO"
+abstract: >-
+  A presentation about GeoJupyter given at Cloud Native Geospatial (CNG) Conference 2026.
+
+# type: "presentation"
+license: "BSD-3-Clause"
+keywords:
+  - "Jupyter"
+  - "GIS"
+  - "Python"
+  - "Geospatial"
+  - "Cloud"
+
+contact:
+  - name: "The GeoJupyter Community"
+    website: "https://geojupyter.org"
+  - name: "The GeoJupyter Community Chat"
+    website: "https://jupyter.zulipchat.com"
+
+version: "0.0.1"
+# date-released: "TODO"
+
+authors:
+  - name: "The GeoJupyter Community"
+  - family-names: "Fisher"
+    given-names: "Matt"
+    affiliation: "Eric and Wendy Schmidt Center for Data Science & Environment at UC Berkeley, United States"
+    alias: "mfisher87"
+    website: "https://mfisher87.github.io/"
+    orcid: "https://orcid.org/0000-0003-3260-5445"
+  - family-names: "Eynard-Bontemps"
+    given-names: "Guillaume"
+    affiliation: "CNES"
+    alias: "guillaumeeb"
+    # website: "TODO"
+    # orcid: "TODO"
