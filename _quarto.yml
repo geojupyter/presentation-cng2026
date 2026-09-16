@@ -1,0 +1,64 @@
+project:
+  type: "website"
+
+
+website:
+  title: "GeoJupyter @ CNG2026"
+  site-url: "https://geojupyter.github.io/presentation-cng2026"
+  favicon: "assets/images/logo.png"
+
+  repo-url: &repo-url "https://github.com/geojupyter/presentation-cng2026"
+  repo-actions: ["edit", "issue"]
+
+  # HACK: Quarto previews don't show drafts as expected. This will cause drafts
+  # to be rendered in production as well! But that's probably fine.
+  # (https://github.com/quarto-dev/quarto-cli/issues/10279)
+  draft-mode: "unlinked"
+
+  navbar:
+    # logo: "assets/images/logo.png"
+
+    left:
+      - text: "Slides"
+        href: "slides.md"
+
+    right:
+      - text: "{{< iconify simple-icons:zulip title='Zulip chat' label='Zulip chat' >}}"
+        aria-label: "Zulip chat"
+        href: "https://jupyter.zulipchat.com/#narrow/channel/471314-geojupyter"
+        target: "_blank"
+      - icon: "github"
+        aria-label: "GitHub"
+        href: *repo-url
+        target: "_blank"
+
+  sidebar:
+    - title: "📖 Community handbook"
+      style: "docked"
+      collapse-level: 3
+      contents:
+        - text: "📖 Community handbook"
+          href: "handbook/index.md"
+          contents:
+            - "handbook/hackathon-facilitation.md"
+
+
+
+  page-footer:
+    left: |
+      © 2025 GeoJupyter Contributors.
+
+      GeoJupyter is a community effort that includes many Jupyter contributors and follows all Jupyter guidelines, but is currently not an official Jupyter subproject.
+    right: "Built with [Quarto](https://quarto.org/) ❤️"
+
+
+format:
+  html:
+    theme:
+      - "spacelab"
+      - "assets/css/styles.scss"
+    page-layout: "full"
+    toc: true
+    # Turn on emoji shortcodes (NOTE: Doesn't work in sidebar, nav or
+    # front-matter):
+    from: "markdown+emoji"

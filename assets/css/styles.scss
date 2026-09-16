@@ -1,0 +1,44 @@
+
+/*-- scss:defaults --*/
+$body-color: #35383a;
+$link-color: #0079e4;
+
+
+/*-- scss:styles --*/
+.card-title {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.card-footer {
+  background-color: unset;
+  font-size: 0.9rem;
+}
+
+.center-quote {
+  margin: 15px;
+  padding: 15px;
+
+  font-style: italic;
+  text-align: center;
+}
+
+.jupyter-orange {
+  color: #f37636;
+}
+
+.emoji-decoration-left {
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+  margin-right: 20px;
+}
+
+figcaption, blockquote p {
+  color: var(--quarto-text-muted);
+}
+
+.caption {
+  margin: auto;
+  text-align: center;
+}
