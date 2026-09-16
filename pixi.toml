@@ -14,3 +14,13 @@ preview = "quarto preview"
 
 [dependencies]
 quarto = ">=1.9.38,<2"
+
+
+[feature.jupyter.dependencies]
+jupyterlab = ">=4.6.3,<5"
+
+[feature.jupyter.tasks]
+jupyterlab = "jupyter lab"
+
+[environments]
+jupyter = ["jupyter"]
