@@ -42,5 +42,5 @@ repos:
     rev: v2.4.2
     hooks:
       - id: codespell
-        exclude: "^_extensions/"
+        exclude: "^_extensions/|pixi.lock"
         args: ['--ignore-words=.codespell-ignore-words']
