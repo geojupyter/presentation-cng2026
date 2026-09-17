@@ -18,7 +18,7 @@ format:
     from: "markdown+emoji"
     theme: "white"
     # css: "assets/css/slides.css"
-    footer: "[Home](/) | [Source](https://github.com/mfisher87/presentation-cng2025) | [geojupyter.org](https://geojupyter.org)"
+    footer: "[Home](/) | [Source](https://github.com/geojupyter/presentation-cng2026) | [geojupyter.org](https://geojupyter.org)"
     auto-stretch: true
     slide-number: true
 ---
