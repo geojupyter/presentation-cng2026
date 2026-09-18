@@ -8,6 +8,7 @@ authors:
     affiliations:
       - "Schmidt DSE @ UC Berkeley"
   - name: "Guillaume Eynard-Bontemps"
+    orcid: "0000-0002-5210-0164"
     affiliations:
       - "CNES"
 title-slide-attributes:
