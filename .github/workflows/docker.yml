@@ -3,9 +3,7 @@ name: "Build container image"
 on:
   push:
     branches: ["main"]
-    paths:
-      - "docker/**"
-      - ".github/workflows/docker.yml"
+    tags: ["*"]
   pull_request:
     paths:
       - "docker/**"
@@ -41,6 +39,7 @@ jobs:
           images: "ghcr.io/${{ github.repository }}"
           tags: |
             type=ref,event=branch
+            type=ref,event=tag
             type=sha,prefix=sha-
             type=raw,value=latest,enable={{is_default_branch}}
 
