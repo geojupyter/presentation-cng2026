@@ -5,9 +5,13 @@ _TODO: Title_
 
 ## How to use this repo
 
-### Slides
+### Slides & website (powered by Quarto)
 
-_TODO: Instructions to build w/ Pixi or w/e_
+Use the existing [Pixi](https://pixi.prefix.dev/latest/) tasks to preview the website:
+
+```bash
+pixi run preview
+```
 
 
 ### Docker
