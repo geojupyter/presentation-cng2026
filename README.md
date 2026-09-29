@@ -1,6 +1,6 @@
 # CNG 2026 Presentation
 
-_TODO: Title_
+_GeoJupyter, a community to reimagine geospatial interactive computing in Jupyter: What is happening, live demos, and what is next_
 
 
 ## How to use this repo
