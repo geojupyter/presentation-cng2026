@@ -1,0 +1,14 @@
+#title-slide .title {
+  font-size: 1.8em;
+}
+
+section.smaller h2 {
+  font-size: 1.75em !important;
+}
+
+.evenly-spaced {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
