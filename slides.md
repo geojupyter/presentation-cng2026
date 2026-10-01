@@ -10,7 +10,7 @@ authors:
   - name: "Guillaume Eynard-Bontemps"
     orcid: "0000-0002-5210-0164"
     affiliations:
-      - "Centre national d'études spatiales (CNES)"
+      - "Centre National d'Etudes Spatiales (CNES)"
 title-slide-attributes:
   data-notes: |
     Good morning!
@@ -60,20 +60,26 @@ musical instruments, dogs!
 :::
 
 
-## :wave: Hi, I'm Guillaume! _TODO: Website/GitHub here_ {.smaller}
+## :wave: Hi, I'm Guillaume! Github: [guillaumeeb](https://github.com/guillaumeeb) {.smaller}
 
 :::::::::columns
 ::::::{.column width=50%}
 :::evenly-spaced
-:question: Guillaume stuff here
+:computer: :space_invader: Satelite mage processing and distributed data analysis expert at [CNES](https://cnes.fr/en)
 
-:question: Guillaume stuff here
+:snowflake: :floppy_disk: Maintaining snow detection algorithm ([Let it snow](https://gitlab.orfeo-toolbox.org/remote_modules/let-it-snow)), and improving CNES [library ecosystem](https://geodes-tools.cnes.fr/en/) (from the outside mainly)
 
-:question: Guillaume stuff here
+:earth_asia: Member of [Pangeo community](https://pangeo.io/) for 8 years (missed the start)
 
-:question: Guillaume stuff here
+:factory: Previously head of the CNES computing center team, specialized in Big Data tools (Spark, Dask)
 
-:question: :question: :question:
+:open_hands: Open source supporter, funding and small contributor:
+[dask](https://github.com/dask/dask),
+[dask-jobqueue](https://github.com/dask/dask-jobqueue),
+[Let it snow](https://gitlab.orfeo-toolbox.org/remote_modules/let-it-snow),
+
+:open_hands: :satellite: :brain: :earth_asia:
+:tent: :runner: :snowboarder: :guitar: :wine_glass: :bridge_at_night:
 :::
 ::::::
 
@@ -84,6 +90,6 @@ musical instruments, dogs!
 
 
 :::notes
-Emojis: Open source, documentation, optimizing for cognitive load, plants and nature,
-musical instruments, dogs!
+Emojis: Open source, Satellite, optimizing for cognitive load, earth observation,
+hiking, running, mountain snow climbing, guitar, party!
 :::
