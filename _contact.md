@@ -4,4 +4,4 @@
 
 **Guillaume**: [Zulip](https://jupyter.zulipchat.com/#user/992831),
 [GitHub](https://github.com/guillaumeeb/),
-_TODO: Preferred email? Other?_
+[email](mailto:guillaume.eynard-bontemps@cnes.fr)
