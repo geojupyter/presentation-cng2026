@@ -65,7 +65,7 @@ musical instruments, dogs!
 :::::::::columns
 ::::::{.column width=50%}
 :::evenly-spaced
-:computer: :space_invader: Satelite mage processing and distributed data analysis expert at [CNES](https://cnes.fr/en)
+:computer: :space_invader: Satellite mage processing and distributed data analysis expert at [CNES](https://cnes.fr/en)
 
 :snowflake: :floppy_disk: Maintaining snow detection algorithm ([Let it snow](https://gitlab.orfeo-toolbox.org/remote_modules/let-it-snow)), and improving CNES [library ecosystem](https://geodes-tools.cnes.fr/en/) (from the outside mainly)
 
