@@ -1,0 +1,12 @@
+services:
+  jupyterlab:
+    command: "jupyter lab --ip=0.0.0.0"
+    image: "geojupyter-presentation-cng2026:dev"
+    build:
+      context: "."
+    ports:
+      - "8888:8888"
+    volumes:
+      # For this to work the home directory must already exist and be owned by user 1000
+      - "./home:/home/jovyan"
+      - "../demo:/home/jovyan/demo"
