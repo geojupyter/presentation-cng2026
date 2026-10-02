@@ -11,16 +11,4 @@ version = "0.1.0"
 [tasks]
 render = "quarto render --fail-if-warnings"
 preview = "quarto preview"
-
-[dependencies]
-quarto = ">=1.9.38,<2"
-
-
-[feature.jupyter.dependencies]
-jupyterlab = ">=4.6.3,<5"
-
-[feature.jupyter.tasks]
-jupyterlab = "jupyter lab"
-
-[environments]
-jupyter = ["jupyter"]
+jupyterlab = "docker compose -f docker/compose.yml up"
