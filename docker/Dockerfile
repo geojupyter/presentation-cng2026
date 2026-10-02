@@ -1,7 +1,7 @@
 FROM pangeo/pangeo-notebook:latest
 
 RUN mamba install --yes -c conda-forge -n ${CONDA_ENV} \
-    "jupytergis>=0.16" \
+    "jupytergis==0.16.7" \
     dask-kubernetes \
     eodag \
     eoreader \
