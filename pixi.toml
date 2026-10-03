@@ -12,3 +12,6 @@ version = "0.1.0"
 render = "quarto render --fail-if-warnings"
 preview = "quarto preview"
 jupyterlab = "docker compose -f docker/compose.yml up"
+
+[dependencies]
+quarto = ">=1.9.38,<2"
