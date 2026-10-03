@@ -6,6 +6,20 @@ section.even-smaller-header h2 {
   font-size: 1.75em !important;
 }
 
+.elevator-pitch {
+  text-align: center;
+}
+
+.elevator-pitch hr {
+  width: 50%;
+  margin: auto;
+}
+
+.jupyter-orange {
+  color: #F37636;
+  font-weight: bold;
+}
+
 .evenly-spaced {
   height: 80%;
   display: flex;

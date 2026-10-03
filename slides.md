@@ -93,3 +93,44 @@ musical instruments, dogs!
 Emojis: Open source, Satellite, optimizing for cognitive load, earth observation,
 hiking, running, mountain snow climbing, guitar, party!
 :::
+
+
+# :earth_asia: GeoJupyter community overview
+
+:::{style="font-size: 1.8em"}
+:zap: Lightning version!
+:::
+
+:link: [geojupyter.org](https://geojupyter.org/)
+
+
+## GeoJupyter community overview {.smaller}
+
+:::::::::columns
+
+::::::{.column width="48%"}
+:::elevator-pitch
+<br />
+<br />
+
+<hr />
+GeoJupyter is an open and community-owned effort to
+[reimagine geospatial interactive computing experiences _within the Jupyter architecture_]{.jupyter-orange}
+to enable more people to confidently engage with geospatial data.
+<hr />
+
+<br />
+<br />
+
+Many players!!!
+:::
+::::::
+
+::::::{.column width="4%"}
+::::::
+
+::::::{.column width="48%"}
+![GeoJupyter is **not** software; it’s a **community** which will build many things together!](/assets/images/venn-diagram.svg)
+::::::
+
+:::::::::
