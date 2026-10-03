@@ -276,6 +276,11 @@ This is a work in progress that will continue to evolve over time!
 ![Animation of an Xarray-computed layer with `jupytergis-tiler`](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LoISLf6L4GKZZgl2a9jlew.gif)
 
 
+## Jupyter Trail (prototyping!)
+
+![A diagram of a history in Jupyter Trail](/assets/images/jupyter-trail-history-diagram.png)
+
+
 ## Experiment: reproducible viz -> Notebook workflows
 
 ![Reproducible workflow from viz-land to Notebook-land (:clap: Benny & Esha!)](assets/images/reproducible-viz-to-notebook-workflow.gif)
