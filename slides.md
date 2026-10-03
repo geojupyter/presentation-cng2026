@@ -24,7 +24,7 @@ format:
     slide-number: true
 ---
 
-## :wave: Hi, I'm Matt! Website: [`mattz.cool`](https://mattz.cool) {.smaller}
+## :wave: Hi, I'm Matt! Website: [`mattz.cool`](https://mattz.cool) {.smaller .even-smaller-header}
 
 :::::::::columns
 ::::::{.column width=50%}
@@ -60,7 +60,7 @@ musical instruments, dogs!
 :::
 
 
-## :wave: Hi, I'm Guillaume! Github: [guillaumeeb](https://github.com/guillaumeeb) {.smaller}
+## :wave: Hi, I'm Guillaume! Github: [guillaumeeb](https://github.com/guillaumeeb) {.smaller .even-smaller-header}
 
 :::::::::columns
 ::::::{.column width=50%}
