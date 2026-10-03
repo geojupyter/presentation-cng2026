@@ -192,16 +192,16 @@ Many players!!!
 
 ### Partners :scientist: :teacher: :technologist:
 
+* QuantStack - Open source for science
 * Maryam Hosseini - urban systems, computer vision, & open source
 * Clancy Wilmott - Critical Cartography, Geovisualisation and Design
-* Char Tomlinson - Earth science, GIS, vertical & volumetric landscapes
+* Qiusheng Wu - Geospatial, AI, & education
 * Sarah Chasins & Parker Zeigler - cartography, CS, & open source
 * Nancy Thomas & Iryna Dronova - Berkeley Geospatial Innovation Facility
 * Carl Boettiger - Geospatial, AI, & education
 * Benny Szeghy & Esha Potharaju - GeoJupyter interns
-* Qiusheng Wu - Geospatial, AI, & education
-* Friends & neighbors: BIDS, MyST, JupyterHub, earthaccess, QuantStack, DevSeed, Pangeo,
-  2i2c, Clark University, Stanford, Simula, CNES, ESA
+* Friends & neighbors: BIDS, MyST, JupyterHub, earthaccess, DevSeed, Pangeo, 2i2c, Clark
+  University, Stanford, Simula, CNES, ESA
 * **MANY MORE!!!**
 
 
