@@ -419,3 +419,6 @@ The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-s
 :teacher: Example datasets for education
 ([initiative](https://github.com/geojupyter/initiatives/issues/9))
 :::
+
+
+# :tada: Demo time
