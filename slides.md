@@ -275,15 +275,127 @@ This is a work in progress that will continue to evolve over time!
 
 ![Animation of an Xarray-computed layer with `jupytergis-tiler`](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LoISLf6L4GKZZgl2a9jlew.gif)
 
+:::notes
+Here, we're directly rendering from an Xarray dataset based on the requested spatial
+extent.
 
-## Jupyter Trail (prototyping!)
+This means we can use lazy computation to compute only the pixels needed for a
+visualiztion.
+We'll show more about this in the demo.
+:::
 
-![A diagram of a history in Jupyter Trail](/assets/images/jupyter-trail-history-diagram.png)
 
+## Jupyter Tiler - current limitations
+
+### Overviews
+
+![A visualization of overviews / tile pyramid.](/assets/images/tile-overviews-diagram.jpg)
+
+::: footer
+Image source: <https://www.kitware.com/deciphering-cloud-optimized-geotiffs/>
+:::
+
+:::notes
+Cloud optimization can mean lots of stuff, and one of those stuff is overviews, or
+tile pyramids.
+
+* Lower resolution chunks that can be accessed directly
+* Useful for visualization! When you're zoomed out, it's wasteful to read every
+  pixel on your dataset, because your screen probably has far fewer pixels for display
+* Zarrs, Cloud Optimized GeoTIFFs are notable formats that support overviews
+:::
+
+
+## Jupyter Tiler - current limitations {.smaller}
+
+### Overviews
+
+An open Xarray `Dataset` represents a single resolution -- no built-in concept of
+overviews
+
+
+:::fragment
+A `DataTree` can represent overviews!
+
+The familiar way of doing computations, e.g. NDSI, is tied to that single-resolution
+object
+:::
+
+:::fragment
+Can map a computation across a `DataTree`!
+
+```python
+dt = xr.open_datatree("s3://.../some.zarr", ...)
+
+def add_ndvi(ds):
+    ...
+    ds["ndvi"] = (ds.nir - ds.red) / (ds.nir + ds.red)
+    return ds
+
+dt = dt.map_over_datasets(add_ndvi)
+```
+:::
+
+:::notes
+* `Dataset` is single-resolution. You can request a specific overview level at open
+  time only.
+* You could build a GeoZarr-style multiscale DataTree for a single object that knows
+  about the overviews. But we still need to do computations differently.
+* To do a computation, you can map a function to add an NDVI task graph to each dataset
+  in the tree.
+:::
+
+## Jupyter Tiler - current limitations
+
+
+::::::evenly-spaced
+:face_with_peeking_eye: That was unfamiliar. A user wouldn't know they need do this.
+
+:::fragment
+:sparkles: Imagine: Familiar Xarray `Dataset`s that are aware of overviews and capable
+of _computing_ on overviews if requested explicitly (e.g. by TiTiler!)
+:::
+
+:::fragment
+:shrug: How? Dunno.
+:::
+::::::
+
+:::notes
+* This new complexity and cognitive load is unnecessary friction for something a
+  researcher would expect to "just work" -- if my data has overviews, why can't I
+  visualize with my overviews?
+* Imagine if the existing `Dataset` API had awareness of the presence of overviews and
+  would allow extremely granular computations. E.g. "compute NDVI for a small coordinate
+  bounding box at max resolution" or "computer NDVI for the whole dataset using the
+  coarsest overview".
+* How do we build this? Is this a bad idea? Is this feasible? How can we fund the work?
+  We're looking to y'all for feedback on this idea.
+  Find me and let's chat or please reach out post-conference :)
+:::
 
 ## Experiment: reproducible viz -> Notebook workflows
 
 ![Reproducible workflow from viz-land to Notebook-land (:clap: Benny & Esha!)](assets/images/reproducible-viz-to-notebook-workflow.gif)
+
+
+## Jupyter Trail (prototyping!)
+
+The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-state-of-spatial-analytics-2026-carto):
+
+> ...the majority use between 3 and 8 tools to get work done
+
+- page 35
+
+. . .
+
+> Cloud-native has become non-negotiable
+
+- page 23
+
+
+## Jupyter Trail (prototyping!)
+![A diagram of a history in Jupyter Trail](/assets/images/jupyter-trail-history-diagram.png)
 
 
 ## [Future](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)
