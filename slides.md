@@ -103,6 +103,11 @@ hiking, running, mountain snow climbing, guitar, party!
 
 :link: [geojupyter.org](https://geojupyter.org/)
 
+:::notes
+I'm gonna skip some stuff here for time but feel free to come back to the slides on your own time
+:)
+:::
+
 
 ## GeoJupyter community overview {.smaller}
 
