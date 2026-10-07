@@ -347,6 +347,23 @@ We'll show more about this in the demo.
 :::
 
 
+## Jupyter Tiler
+
+Google Earth Engine UX with open source tools?
+
+. . .
+
+Secret sauce is [using **overviews** efficiently](https://developers.google.com/earth-engine/guides/scale), not infrastructure
+
+:::notes
+Many researchers use GEE because of its strong and _accessible_ visualization-analysis feedback loop.
+We haven't quite nailed this in the open source ecosystem yet.
+
+GEE achieves this through efficient use of overviews, not just by throwing hardware at
+the problem.
+:::
+
+
 # :tada: Demo time
 
 
@@ -372,6 +389,15 @@ tile pyramids.
   your screen probably has far fewer pixels than the full resolution data.
 * Zarrs, Cloud Optimized GeoTIFFs are notable formats that support overviews
 :::
+
+
+## Jupyter Tiler - current limitations {.smaller}
+
+### Overviews
+
+Problem: A _computation_ on an Xarray dataset is still performed at full resolution.
+
+For a tight viz-analysis feedback loop, you might want to compute on overviews.
 
 
 ## Jupyter Tiler - current limitations {.smaller}
