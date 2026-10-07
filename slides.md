@@ -266,6 +266,53 @@ This is a work in progress that will continue to evolve over time!
 :::
 
 
+## Experiment: reproducible viz -> Notebook workflows
+
+![Reproducible workflow from viz-land to Notebook-land (:clap: Benny & Esha!)](assets/images/reproducible-viz-to-notebook-workflow.gif)
+
+
+## Jupyter Trail (prototyping!)
+
+The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-state-of-spatial-analytics-2026-carto):
+
+> ...the majority use between 3 and 8 tools to get work done
+
+- page 35
+
+. . .
+
+> Cloud-native has become non-negotiable
+
+- page 23
+
+
+## Jupyter Trail (prototyping!)
+![A diagram of a history in Jupyter Trail](/assets/images/jupyter-trail-history-diagram.png)
+
+
+## [Future](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)
+
+:::evenly-spaced
+:open_book: **"Scrollytelling"**
+([initiative](https://github.com/geojupyter/initiatives/issues/19))
+
+:robot: GeoAI :thinking:
+([initiative](https://github.com/geojupyter/initiatives/issues/14), [prototype](https://github.com/geojupyter/jupyter-geoagent),
+[talk](https://www.youtube.com/watch?v=_5yuXU5salY))
+
+:rock: Richer geospatial primitives for Python
+([initiative](https://github.com/geojupyter/initiatives/issues/18))
+
+:mountain: Reproducible "geoprocessing" (following lessons learned from interns' exploration) ([initiative](https://github.com/geojupyter/initiatives/issues/3))
+
+:art: Reusable symbology editor component?
+([initiative](https://github.com/geojupyter/initiatives/issues/8))
+
+:teacher: Example datasets for education
+([initiative](https://github.com/geojupyter/initiatives/issues/9))
+:::
+
+
 ## Jupyter Tiler
 
 ![A diagram of `jupyter-tiler`](/assets/images/jupyter-tiler-diagram.svg)
@@ -285,6 +332,9 @@ We'll show more about this in the demo.
 :::
 
 
+# :tada: Demo time
+
+
 ## Jupyter Tiler - current limitations
 
 ### Overviews
@@ -296,12 +346,15 @@ Image source: <https://www.kitware.com/deciphering-cloud-optimized-geotiffs/>
 :::
 
 :::notes
+Let's talk about overviews.
+
 Cloud optimization can mean lots of stuff, and one of those stuff is overviews, or
 tile pyramids.
 
 * Lower resolution chunks that can be accessed directly
-* Useful for visualization! When you're zoomed out, it's wasteful to read every
-  pixel on your dataset, because your screen probably has far fewer pixels for display
+* Critical for cloud-optimizing our data for visualization!
+  When you're zoomed out, it's wasteful to read every pixel on your dataset, because
+  your screen probably has far fewer pixels than the full resolution data.
 * Zarrs, Cloud Optimized GeoTIFFs are notable formats that support overviews
 :::
 
@@ -373,52 +426,3 @@ of _computing_ on overviews if requested explicitly (e.g. by TiTiler!)
   We're looking to y'all for feedback on this idea.
   Find me and let's chat or please reach out post-conference :)
 :::
-
-## Experiment: reproducible viz -> Notebook workflows
-
-![Reproducible workflow from viz-land to Notebook-land (:clap: Benny & Esha!)](assets/images/reproducible-viz-to-notebook-workflow.gif)
-
-
-## Jupyter Trail (prototyping!)
-
-The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-state-of-spatial-analytics-2026-carto):
-
-> ...the majority use between 3 and 8 tools to get work done
-
-- page 35
-
-. . .
-
-> Cloud-native has become non-negotiable
-
-- page 23
-
-
-## Jupyter Trail (prototyping!)
-![A diagram of a history in Jupyter Trail](/assets/images/jupyter-trail-history-diagram.png)
-
-
-## [Future](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)
-
-:::evenly-spaced
-:open_book: **"Scrollytelling"**
-([initiative](https://github.com/geojupyter/initiatives/issues/19))
-
-:robot: GeoAI :thinking:
-([initiative](https://github.com/geojupyter/initiatives/issues/14), [prototype](https://github.com/geojupyter/jupyter-geoagent),
-[talk](https://www.youtube.com/watch?v=_5yuXU5salY))
-
-:rock: Richer geospatial primitives for Python
-([initiative](https://github.com/geojupyter/initiatives/issues/18))
-
-:mountain: Reproducible "geoprocessing" (following lessons learned from interns' exploration) ([initiative](https://github.com/geojupyter/initiatives/issues/3))
-
-:art: Reusable symbology editor component?
-([initiative](https://github.com/geojupyter/initiatives/issues/8))
-
-:teacher: Example datasets for education
-([initiative](https://github.com/geojupyter/initiatives/issues/9))
-:::
-
-
-# :tada: Demo time
