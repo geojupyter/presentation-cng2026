@@ -472,6 +472,7 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
   Does this fit in Xarray or is it a new thing?
   We're looking to y'all for feedback on this idea.
   Find me and let's chat or please reach out post-conference :)
+  If you saw Joe Hamman's lightning talk about Zax yesterday, that might be one pathway.
 :::
 
 
