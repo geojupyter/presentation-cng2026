@@ -29,10 +29,11 @@ format:
 :::::::::columns
 ::::::{.column width=50%}
 :::evenly-spaced
-:computer: Research Software Engineer ([RSE](https://us-rse.org/)), Community Manager @ [Schmidt DSE, UC
-Berkeley](https://dse.berkeley.edu/)
+:computer: Research Software Engineer ([RSE](https://us-rse.org/))
 
 :people_holding_hands: Community Engagement Manager
+
+:bear: At [Schmidt DSE, UC Berkeley](https://dse.berkeley.edu/)
 
 :snowflake: Previously at [National Snow & Ice Data Center (NSIDC)](https://nsidc.org)
 
