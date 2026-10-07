@@ -341,8 +341,8 @@ Mention Development Seed and Earthmover
 Here, we're directly rendering from an Xarray dataset based on the requested spatial
 extent.
 
-This means we can use lazy computation to compute only the pixels needed for a
-visualiztion.
+This means we can use lazy computation to compute subsets of the dataset to generate
+tiles.
 We'll show more about this in the demo.
 :::
 
