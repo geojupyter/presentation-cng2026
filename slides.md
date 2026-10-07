@@ -103,6 +103,11 @@ hiking, running, mountain snow climbing, guitar, party!
 
 :link: [geojupyter.org](https://geojupyter.org/)
 
+:::notes
+I'm gonna skip some stuff here for time but feel free to come back to the slides on your own time
+:)
+:::
+
 
 ## GeoJupyter community overview {.smaller}
 
@@ -162,7 +167,7 @@ Many players!!!
 
 :leaves: Accessibility (transition to new ways of working, including reproducibility)
 
-:cloud: Cloud-native (computing, data formats)
+:cloud: **Cloud-native** (computing, data formats)
 
 :robot: AI :scream: :boom: (risks & opportunities)
 
@@ -266,114 +271,6 @@ This is a work in progress that will continue to evolve over time!
 :::
 
 
-## Jupyter Tiler
-
-![A diagram of `jupyter-tiler`](/assets/images/jupyter-tiler-diagram.svg)
-
-
----
-
-![Animation of an Xarray-computed layer with `jupytergis-tiler`](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LoISLf6L4GKZZgl2a9jlew.gif)
-
-:::notes
-Here, we're directly rendering from an Xarray dataset based on the requested spatial
-extent.
-
-This means we can use lazy computation to compute only the pixels needed for a
-visualiztion.
-We'll show more about this in the demo.
-:::
-
-
-## Jupyter Tiler - current limitations
-
-### Overviews
-
-![A visualization of overviews / tile pyramid.](/assets/images/tile-overviews-diagram.jpg)
-
-::: footer
-Image source: <https://www.kitware.com/deciphering-cloud-optimized-geotiffs/>
-:::
-
-:::notes
-Cloud optimization can mean lots of stuff, and one of those stuff is overviews, or
-tile pyramids.
-
-* Lower resolution chunks that can be accessed directly
-* Useful for visualization! When you're zoomed out, it's wasteful to read every
-  pixel on your dataset, because your screen probably has far fewer pixels for display
-* Zarrs, Cloud Optimized GeoTIFFs are notable formats that support overviews
-:::
-
-
-## Jupyter Tiler - current limitations {.smaller}
-
-### Overviews
-
-An open Xarray `Dataset` represents a single resolution -- no built-in concept of
-overviews
-
-
-:::fragment
-A `DataTree` can represent overviews!
-
-The familiar way of doing computations, e.g. NDSI, is tied to that single-resolution
-object
-:::
-
-:::fragment
-Can map a computation across a `DataTree`!
-
-```python
-dt = xr.open_datatree("s3://.../some.zarr", ...)
-
-def add_ndvi(ds):
-    ...
-    ds["ndvi"] = (ds.nir - ds.red) / (ds.nir + ds.red)
-    return ds
-
-dt = dt.map_over_datasets(add_ndvi)
-```
-:::
-
-:::notes
-* `Dataset` is single-resolution. You can request a specific overview level at open
-  time only.
-* You could build a GeoZarr-style multiscale DataTree for a single object that knows
-  about the overviews. But we still need to do computations differently.
-* To do a computation, you can map a function to add an NDVI task graph to each dataset
-  in the tree.
-:::
-
-## Jupyter Tiler - current limitations
-
-
-::::::evenly-spaced
-:face_with_peeking_eye: That was unfamiliar. A user wouldn't know they need do this.
-
-:::fragment
-:sparkles: Imagine: Familiar Xarray `Dataset`s that are aware of overviews and capable
-of _computing_ on overviews if requested explicitly (e.g. by TiTiler!)
-:::
-
-:::fragment
-:shrug: How? Dunno.
-:::
-::::::
-
-:::notes
-* This new complexity and cognitive load is unnecessary friction for something a
-  researcher would expect to "just work" -- if my data has overviews, why can't I
-  visualize with my overviews?
-* Imagine if the existing `Dataset` API had awareness of the presence of overviews and
-  would allow extremely granular computations. E.g. "compute NDVI for a small coordinate
-  bounding box at max resolution" or "computer NDVI for the whole dataset using the
-  coarsest overview".
-* How do we build this? Is this a bad idea? Is this feasible? How can we fund the work?
-  We're looking to y'all for feedback on this idea.
-  Find me and let's chat or please reach out post-conference :)
-:::
-
 ## Experiment: reproducible viz -> Notebook workflows
 
 ![Reproducible workflow from viz-land to Notebook-land (:clap: Benny & Esha!)](assets/images/reproducible-viz-to-notebook-workflow.gif)
@@ -389,36 +286,236 @@ The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-s
 
 . . .
 
-> Cloud-native has become non-negotiable
+> **Cloud-native** has become non-negotiable
 
-- page 23
+- page 23 (emphasis added)
+
+:::notes
+...
+
+When working across 3 to 8 tools, it's very difficult to remember or track what you did, and in what order.
+
+Our ability to share, teach about, and reproduce our work all suffer.
+
+...
+
+And because we're at CNG, I wanted to highlight this other claim from the report :)
+:::
 
 
 ## Jupyter Trail (prototyping!)
-![A diagram of a history in Jupyter Trail](/assets/images/jupyter-trail-history-diagram.png)
+
+A tool for tracking workflows across tools
+
+![A diagram of a "trail"](/assets/images/jupyter-trail-history-diagram.png)
+
+:::notes
+This diagram shows a hypothetical "trail" through multiple tools.
+
+Here the user has recorded their actions across several tools and curated this history.
+
+Highlight the meaningful part of their path (green line)
+
+De-emphasize their side-quests (faded)
+
+They might use this tool to help them reproduce and/or document their workflow for a
+publication.
+:::
 
 
-## [Future](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)
+## Jupyter Tiler
 
-:::evenly-spaced
-:open_book: **"Scrollytelling"**
-([initiative](https://github.com/geojupyter/initiatives/issues/19))
+A building block (on top of [TiTiler](https://github.com/developmentseed/titiler/) and
+[xpublish-tiles](https://github.com/earth-mover/xpublish-tiles)) for interactively
+exploring Xarray data.
 
-:robot: GeoAI :thinking:
-([initiative](https://github.com/geojupyter/initiatives/issues/14), [prototype](https://github.com/geojupyter/jupyter-geoagent),
-[talk](https://www.youtube.com/watch?v=_5yuXU5salY))
+:tada: [Available to try now in JupyterGIS](https://jupytergis.readthedocs.io/en/latest/user_guide/python_api/api.html#jupytergis.GISDocument.add_data_array_layer)!
 
-:rock: Richer geospatial primitives for Python
-([initiative](https://github.com/geojupyter/initiatives/issues/18))
+![A diagram of `jupyter-tiler`](/assets/images/jupyter-tiler-diagram.svg)
 
-:mountain: Reproducible "geoprocessing" (following lessons learned from interns' exploration) ([initiative](https://github.com/geojupyter/initiatives/issues/3))
+:::notes
+Mention Development Seed and Earthmover
+:::
 
-:art: Reusable symbology editor component?
-([initiative](https://github.com/geojupyter/initiatives/issues/8))
 
-:teacher: Example datasets for education
-([initiative](https://github.com/geojupyter/initiatives/issues/9))
+## Jupyter Tiler
+
+![Animation of an Xarray-computed layer with `jupytergis-tiler`](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LoISLf6L4GKZZgl2a9jlew.gif)
+
+:::notes
+Here, we're directly rendering from an Xarray dataset based on the requested spatial
+extent.
+
+This means we can use lazy computation to compute subsets of the dataset to generate
+tiles.
+We'll show more about this in the demo.
+:::
+
+
+## Jupyter Tiler
+
+::::::evenly-spaced
+Google Earth Engine UX with open source tools?
+
+:::fragment
+Secret sauce is [using **overviews** efficiently](https://developers.google.com/earth-engine/guides/scale), not infrastructure
+:::
+::::::
+
+:::notes
+Many researchers use GEE because of its strong and _accessible_ visualization-analysis feedback loop.
+We haven't quite nailed this in the open source ecosystem yet.
+
+GEE achieves this through efficient use of overviews, not just by throwing hardware at
+the problem.
 :::
 
 
 # :tada: Demo time
+
+
+## Jupyter Tiler - current limitations
+
+### Overviews
+
+![A visualization of overviews / tile pyramid.](/assets/images/tile-overviews-diagram.jpg)
+
+::: footer
+Image source: <https://www.kitware.com/deciphering-cloud-optimized-geotiffs/>
+:::
+
+:::notes
+Let's talk about overviews.
+
+Cloud optimization can mean lots of stuff, and one of those stuff is overviews, or
+tile pyramids.
+
+* Lower resolution chunks that can be accessed directly
+* Critical for cloud-optimizing our data for visualization!
+  When you're zoomed out, it's wasteful to read every pixel on your dataset, because
+  your screen probably has far fewer pixels than the full resolution data.
+* Zarrs, Cloud Optimized GeoTIFFs are notable formats that support overviews
+:::
+
+
+## Jupyter Tiler - current limitations {.smaller}
+
+### Overviews
+
+:::evenly-spaced
+**Problem**: A _computation_ on an Xarray dataset is still performed at full resolution.
+
+For a tight viz-analysis feedback loop, we might want to compute on overviews.
+:::
+
+:::notes
+For responsive visualization, it's really important to not compute pixels we're not
+capable of displaying on-screen.
+:::
+
+
+## Jupyter Tiler - current limitations {.smaller}
+
+### Overviews
+
+An open Xarray `Dataset` represents a single resolution -- no built-in concept of
+overviews
+
+:::fragment
+A `DataTree` can represent overviews!
+But the familiar way of doing computations is with a `Dataset` or `DataArray`.
+:::
+
+:::fragment
+Can technically map a computation across a `DataTree`!
+
+```python
+dt = xr.open_datatree("s3://.../some.zarr", ...)
+
+def add_ndvi(ds):
+    ...
+    ds["ndvi"] = (ds.nir - ds.red) / (ds.nir + ds.red)
+    return ds
+
+dt = dt.map_over_datasets(add_ndvi)
+```
+
+[xpublish-tiles](https://github.com/earth-mover/xpublish-tiles) can do something like
+this
+:::
+
+:::notes
+* `Dataset` is single-resolution. You can request a specific overview level at open
+  time only.
+* You could build a GeoZarr-style multiscale DataTree for a single object that knows
+  about the overviews.
+  xpublish-tiles can do this!
+* To do a computation, you can map a function to add an NDVI task graph to each dataset
+  in the tree.
+  xpublish-tiles can do this but you need to hand it a multiscale `DataTree` object.
+:::
+
+
+## Jupyter Tiler - current limitations
+
+### Overviews
+
+::::::evenly-spaced
+:face_with_peeking_eye: That was unfamiliar.
+A user wouldn't know they need do this.
+
+:::fragment
+:sparkles: Imagine: Familiar Xarray `Dataset`s (or similar objects) that are aware of overviews
+and capable of _computing_ on overviews if explicitly requested (e.g. by a tile server!)
+:::
+
+:::fragment
+:shrug: How?
+:::
+::::::
+
+:::notes
+* This new complexity and cognitive load is unnecessary friction for something a
+  researcher would expect to "just work" -- if my data has overviews, why can't I
+  visualize with my overviews?
+* Imagine if the existing `Dataset` API had awareness of the presence of overviews and
+  would allow extremely granular computations. E.g. "compute NDVI for a small coordinate
+  bounding box at max resolution" or "computer NDVI for the whole dataset using the
+  coarsest overview".
+* How do we build this? Is this a bad idea? Is this feasible? How can we fund the work?
+  Does this fit in Xarray or is it a new thing?
+  We're looking to y'all for feedback on this idea.
+  Find me and let's chat or please reach out post-conference :)
+  If you saw Joe Hamman's lightning talk about Zax yesterday, that might be one pathway.
+:::
+
+
+## [Future](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)?
+
+:::evenly-spaced
+:open_book: "Scrollytelling" with a Markdown authoring workflow?
+([initiative](https://github.com/geojupyter/initiatives/issues/19))
+
+:robot: GeoAI? :thinking:
+([initiative](https://github.com/geojupyter/initiatives/issues/14), [prototype](https://github.com/geojupyter/jupyter-geoagent),
+[talk](https://www.youtube.com/watch?v=_5yuXU5salY))
+
+:rock: Richer geospatial primitives for Python?
+([initiative](https://github.com/geojupyter/initiatives/issues/18))
+
+:mountain: Reproducible GUI "geoprocessing" (following lessons learned from interns' exploration)? ([initiative](https://github.com/geojupyter/initiatives/issues/3))
+
+:art: Reusable symbology editor component?
+([initiative](https://github.com/geojupyter/initiatives/issues/8))
+
+:teacher: Example datasets for education?
+([initiative](https://github.com/geojupyter/initiatives/issues/9))
+:::
+
+
+## How you can participate
+
+{{< include _join.md >}}
+
+
+# :heart: Thank you! :heart:
