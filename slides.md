@@ -31,7 +31,7 @@ format:
 :::evenly-spaced
 :computer: Research Software Engineer ([RSE](https://us-rse.org/))
 
-:people_holding_hands: Community Engagement Manager
+:people_holding_hands: Community builder
 
 :bear: At [Schmidt DSE, UC Berkeley](https://dse.berkeley.edu/)
 
