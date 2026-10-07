@@ -33,16 +33,16 @@ format:
 
 :people_holding_hands: Community builder
 
-:bear: At [Schmidt DSE, UC Berkeley](https://dse.berkeley.edu/)
-
-:snowflake: Previously at [National Snow & Ice Data Center (NSIDC)](https://nsidc.org)
-
 :open_hands: Open source maintainer & contributor:
 [jupytergis](https://github.com/geojupyter/jupytergis),
 [jupyter-tiler](https://github.com/geojupyter/jupyter-tiler),
 [earthaccess](https://github.com/nsidc/earthaccess),
 several [conda-forge](https://conda-forge.org/) packages,
 more!
+
+:bear: At [Schmidt DSE, UC Berkeley](https://dse.berkeley.edu/)
+
+:snowflake: Previously at [National Snow & Ice Data Center (NSIDC)](https://nsidc.org)
 
 :open_hands: :open_book: :brain:
 :seedling: :notes: :drum: :musical_keyboard: :dog:
