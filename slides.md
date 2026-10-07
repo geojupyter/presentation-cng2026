@@ -328,6 +328,10 @@ exploring Xarray data.
 
 ![A diagram of `jupyter-tiler`](/assets/images/jupyter-tiler-diagram.svg)
 
+:::notes
+Mention Development Seed and Earthmover
+:::
+
 
 ## Jupyter Tiler
 
