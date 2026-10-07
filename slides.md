@@ -320,7 +320,9 @@ publication.
 
 ## Jupyter Tiler
 
-A building block for interactively exploring Xarray data.
+A building block (on top of [TiTiler](https://github.com/developmentseed/titiler/) and
+[xpublish-tiles](https://github.com/earth-mover/xpublish-tiles)) for interactively
+exploring Xarray data.
 
 :tada: [Available to try now in JupyterGIS](https://jupytergis.readthedocs.io/en/latest/user_guide/python_api/api.html#jupytergis.GISDocument.add_data_array_layer)!
 
