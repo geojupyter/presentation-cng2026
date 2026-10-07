@@ -162,7 +162,7 @@ Many players!!!
 
 :leaves: Accessibility (transition to new ways of working, including reproducibility)
 
-:cloud: Cloud-native (computing, data formats)
+:cloud: **Cloud-native** (computing, data formats)
 
 :robot: AI :scream: :boom: (risks & opportunities)
 
@@ -281,9 +281,9 @@ The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-s
 
 . . .
 
-> Cloud-native has become non-negotiable
+> **Cloud-native** has become non-negotiable
 
-- page 23
+- page 23 (emphasis added)
 
 
 ## Jupyter Trail (prototyping!)
