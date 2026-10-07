@@ -364,7 +364,12 @@ Secret sauce is [using **overviews** efficiently](https://developers.google.com/
 
 :::notes
 Many researchers use GEE because of its strong and _accessible_ visualization-analysis feedback loop.
-We haven't quite nailed this in the open source ecosystem yet.
+
+GEE is expensive and subjects users to vendor lock-in.
+
+We haven't quite nailed this in the open source & cloud-native ecosystems yet.
+
+...
 
 GEE achieves this through efficient use of overviews, not just by throwing hardware at
 the problem.
