@@ -407,16 +407,13 @@ For a tight viz-analysis feedback loop, you might want to compute on overviews.
 An open Xarray `Dataset` represents a single resolution -- no built-in concept of
 overviews
 
-
 :::fragment
 A `DataTree` can represent overviews!
-
-The familiar way of doing computations, e.g. NDSI, is tied to that single-resolution
-object
+But the familiar way of doing computations is with a `Dataset` or `DataArray`.
 :::
 
 :::fragment
-Can map a computation across a `DataTree`!
+Can technically map a computation across a `DataTree`!
 
 ```python
 dt = xr.open_datatree("s3://.../some.zarr", ...)
@@ -428,26 +425,34 @@ def add_ndvi(ds):
 
 dt = dt.map_over_datasets(add_ndvi)
 ```
+
+[xpublish-tiles](https://github.com/earth-mover/xpublish-tiles) can do something like
+this
 :::
 
 :::notes
 * `Dataset` is single-resolution. You can request a specific overview level at open
   time only.
 * You could build a GeoZarr-style multiscale DataTree for a single object that knows
-  about the overviews. But we still need to do computations differently.
+  about the overviews.
+  xpublish-tiles can do this!
 * To do a computation, you can map a function to add an NDVI task graph to each dataset
   in the tree.
+  xpublish-tiles can do this but you need to hand it a multiscale `DataTree` object.
 :::
+
 
 ## Jupyter Tiler - current limitations
 
+### Overviews
 
 ::::::evenly-spaced
-:face_with_peeking_eye: That was unfamiliar. A user wouldn't know they need do this.
+:face_with_peeking_eye: That was unfamiliar.
+A user wouldn't know they need do this.
 
 :::fragment
-:sparkles: Imagine: Familiar Xarray `Dataset`s that are aware of overviews and capable
-of _computing_ on overviews if requested explicitly (e.g. by TiTiler!)
+:sparkles: Imagine: Familiar Xarray `Dataset`s (or similar objects) that are aware of overviews
+and capable of _computing_ on overviews if explicitly requested (e.g. by a tile server!)
 :::
 
 :::fragment
@@ -464,6 +469,7 @@ of _computing_ on overviews if requested explicitly (e.g. by TiTiler!)
   bounding box at max resolution" or "computer NDVI for the whole dataset using the
   coarsest overview".
 * How do we build this? Is this a bad idea? Is this feasible? How can we fund the work?
+  Does this fit in Xarray or is it a new thing?
   We're looking to y'all for feedback on this idea.
   Find me and let's chat or please reach out post-conference :)
 :::
