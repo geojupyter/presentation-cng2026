@@ -140,41 +140,6 @@ Many players!!!
 
 :::::::::
 
-
-## Our values
-
-:::evenly-spaced
-:open_hands: **Open source & open science** - geospatial data is important to everyone!
-
-:cartwheeling: **Approachability** and **playfulness**, like desktop GIS tools
-
-:feather: **Flexibility** and **reproducibility**, like coding methods
-
-:performing_arts: **Collaboration** and **storytelling**, like Jupyter Notebooks
-:::
-
-
-## GeoJupyter community overview {.smaller}
-
-### Geospatial data practice for the modern era
-
-**Geospatial data is everywhere and matters for everyone! 🚚🚢🗺️🧪🌏**
-
-:::evenly-spaced
-:handshake: Real-time collaboration (like Google Docs)
-
-:recycle: Reproducibility (by default!)
-
-:leaves: Accessibility (transition to new ways of working, including reproducibility)
-
-:cloud: **Cloud-native** (computing, data formats)
-
-:robot: AI :scream: :boom: (risks & opportunities)
-
-<br />
-<br />
-:::
-
 ## GeoJupyter community overview {.smaller}
 
 ### Open, participatory development
@@ -191,23 +156,6 @@ Many players!!!
 <br />
 <br />
 :::
-
-
-## GeoJupyter community overview {.smaller}
-
-### Partners :scientist: :teacher: :technologist:
-
-* QuantStack - Open source for science
-* Maryam Hosseini - urban systems, computer vision, & open source
-* Clancy Wilmott - Critical Cartography, Geovisualisation and Design
-* Qiusheng Wu - Geospatial, AI, & education
-* Sarah Chasins & Parker Zeigler - cartography, CS, & open source
-* Nancy Thomas & Iryna Dronova - Berkeley Geospatial Innovation Facility
-* Carl Boettiger - Geospatial, AI, & education
-* Benny Szeghy & Esha Potharaju - GeoJupyter interns
-* Friends & neighbors: BIDS, MyST, JupyterHub, earthaccess, DevSeed, Pangeo, 2i2c, Clark
-  University, Stanford, Simula, CNES, ESA
-* **MANY MORE!!!**
 
 
 # :building_construction: Projects in the GeoJupyter community
@@ -524,3 +472,60 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
 
 
 # :heart: Thank you! :heart:
+
+
+# :tada: Bonus slides
+
+
+## GeoJupyter community overview {.smaller}
+
+## Our values
+
+:::evenly-spaced
+:open_hands: **Open source & open science** - geospatial data is important to everyone!
+
+:cartwheeling: **Approachability** and **playfulness**, like desktop GIS tools
+
+:feather: **Flexibility** and **reproducibility**, like coding methods
+
+:performing_arts: **Collaboration** and **storytelling**, like Jupyter Notebooks
+:::
+
+
+## GeoJupyter community overview {.smaller}
+
+### Geospatial data practice for the modern era
+
+**Geospatial data is everywhere and matters for everyone! 🚚🚢🗺️🧪🌏**
+
+:::evenly-spaced
+:handshake: Real-time collaboration (like Google Docs)
+
+:recycle: Reproducibility (by default!)
+
+:leaves: Accessibility (transition to new ways of working, including reproducibility)
+
+:cloud: **Cloud-native** (computing, data formats)
+
+:robot: AI :scream: :boom: (risks & opportunities)
+
+<br />
+<br />
+:::
+
+
+## GeoJupyter community overview {.smaller}
+
+### Partners :scientist: :teacher: :technologist:
+
+* QuantStack - Open source for science
+* Maryam Hosseini - urban systems, computer vision, & open source
+* Clancy Wilmott - Critical Cartography, Geovisualisation and Design
+* Qiusheng Wu - Geospatial, AI, & education
+* Sarah Chasins & Parker Zeigler - cartography, CS, & open source
+* Nancy Thomas & Iryna Dronova - Berkeley Geospatial Innovation Facility
+* Carl Boettiger - Geospatial, AI, & education
+* Benny Szeghy & Esha Potharaju - GeoJupyter interns
+* Friends & neighbors: BIDS, MyST, JupyterHub, earthaccess, DevSeed, Pangeo, 2i2c, Clark
+  University, Stanford, Simula, CNES, ESA
+* **MANY MORE!!!**
