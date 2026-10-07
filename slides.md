@@ -290,29 +290,6 @@ The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-s
 ![A diagram of a history in Jupyter Trail](/assets/images/jupyter-trail-history-diagram.png)
 
 
-## [Future](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)
-
-:::evenly-spaced
-:open_book: **"Scrollytelling"**
-([initiative](https://github.com/geojupyter/initiatives/issues/19))
-
-:robot: GeoAI :thinking:
-([initiative](https://github.com/geojupyter/initiatives/issues/14), [prototype](https://github.com/geojupyter/jupyter-geoagent),
-[talk](https://www.youtube.com/watch?v=_5yuXU5salY))
-
-:rock: Richer geospatial primitives for Python
-([initiative](https://github.com/geojupyter/initiatives/issues/18))
-
-:mountain: Reproducible "geoprocessing" (following lessons learned from interns' exploration) ([initiative](https://github.com/geojupyter/initiatives/issues/3))
-
-:art: Reusable symbology editor component?
-([initiative](https://github.com/geojupyter/initiatives/issues/8))
-
-:teacher: Example datasets for education
-([initiative](https://github.com/geojupyter/initiatives/issues/9))
-:::
-
-
 ## Jupyter Tiler
 
 A building block for interactively exploring Xarray data.
@@ -429,4 +406,27 @@ of _computing_ on overviews if requested explicitly (e.g. by TiTiler!)
 * How do we build this? Is this a bad idea? Is this feasible? How can we fund the work?
   We're looking to y'all for feedback on this idea.
   Find me and let's chat or please reach out post-conference :)
+:::
+
+
+## [Future](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)
+
+:::evenly-spaced
+:open_book: **"Scrollytelling"**
+([initiative](https://github.com/geojupyter/initiatives/issues/19))
+
+:robot: GeoAI :thinking:
+([initiative](https://github.com/geojupyter/initiatives/issues/14), [prototype](https://github.com/geojupyter/jupyter-geoagent),
+[talk](https://www.youtube.com/watch?v=_5yuXU5salY))
+
+:rock: Richer geospatial primitives for Python
+([initiative](https://github.com/geojupyter/initiatives/issues/18))
+
+:mountain: Reproducible "geoprocessing" (following lessons learned from interns' exploration) ([initiative](https://github.com/geojupyter/initiatives/issues/3))
+
+:art: Reusable symbology editor component?
+([initiative](https://github.com/geojupyter/initiatives/issues/8))
+
+:teacher: Example datasets for education
+([initiative](https://github.com/geojupyter/initiatives/issues/9))
 :::
