@@ -285,9 +285,37 @@ The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-s
 
 - page 23 (emphasis added)
 
+:::notes
+...
+
+When working across 3 to 8 tools, it's very difficult to remember or track what you did, and in what order.
+
+Our ability to share, teach about, and reproduce our work all suffer.
+
+...
+
+And because we're at CNG, I wanted to highlight this other claim from the report :)
+:::
+
 
 ## Jupyter Trail (prototyping!)
-![A diagram of a history in Jupyter Trail](/assets/images/jupyter-trail-history-diagram.png)
+
+A tool for tracking workflows across tools
+
+![A diagram of a "trail"](/assets/images/jupyter-trail-history-diagram.png)
+
+:::notes
+This diagram shows a hypothetical "trail" through multiple tools.
+
+Here the user has recorded their actions across several tools and curated this history.
+
+Highlight the meaningful part of their path (green line)
+
+De-emphasize their side-quests (faded)
+
+They might use this tool to help them reproduce and/or document their workflow for a
+publication.
+:::
 
 
 ## Jupyter Tiler
