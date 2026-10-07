@@ -456,7 +456,7 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
 :::
 
 :::fragment
-:shrug: How? Dunno.
+:shrug: How?
 :::
 ::::::
 
