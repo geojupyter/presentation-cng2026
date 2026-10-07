@@ -60,7 +60,7 @@ musical instruments, dogs!
 :::
 
 
-## :wave: Hi, I'm Guillaume! Github: [guillaumeeb](https://github.com/guillaumeeb) {.smaller .even-smaller-header}
+## :wave: Hi, I'm Guillaume! GitHub: [guillaumeeb](https://github.com/guillaumeeb) {.smaller .even-smaller-header}
 
 :::::::::columns
 ::::::{.column width=50%}
