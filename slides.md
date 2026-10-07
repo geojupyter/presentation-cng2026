@@ -29,12 +29,9 @@ format:
 :::::::::columns
 ::::::{.column width=50%}
 :::evenly-spaced
-:computer: Research Software Engineer ([RSE](https://us-rse.org/)), Community Manager @ [Schmidt DSE, UC
-Berkeley](https://dse.berkeley.edu/)
+:computer: Research Software Engineer ([RSE](https://us-rse.org/))
 
-:people_holding_hands: Community Engagement Manager
-
-:snowflake: Previously at [National Snow & Ice Data Center (NSIDC)](https://nsidc.org)
+:people_holding_hands: Community builder
 
 :open_hands: Open source maintainer & contributor:
 [jupytergis](https://github.com/geojupyter/jupytergis),
@@ -42,6 +39,10 @@ Berkeley](https://dse.berkeley.edu/)
 [earthaccess](https://github.com/nsidc/earthaccess),
 several [conda-forge](https://conda-forge.org/) packages,
 more!
+
+:bear: At [Schmidt DSE, UC Berkeley](https://dse.berkeley.edu/)
+
+:snowflake: Previously at [National Snow & Ice Data Center (NSIDC)](https://nsidc.org)
 
 :open_hands: :open_book: :brain:
 :seedling: :notes: :drum: :musical_keyboard: :dog:
@@ -60,7 +61,7 @@ musical instruments, dogs!
 :::
 
 
-## :wave: Hi, I'm Guillaume! Github: [guillaumeeb](https://github.com/guillaumeeb) {.smaller .even-smaller-header}
+## :wave: Hi, I'm Guillaume! GitHub: [guillaumeeb](https://github.com/guillaumeeb) {.smaller .even-smaller-header}
 
 :::::::::columns
 ::::::{.column width=50%}
@@ -104,8 +105,8 @@ hiking, running, mountain snow climbing, guitar, party!
 :link: [geojupyter.org](https://geojupyter.org/)
 
 :::notes
-I'm gonna skip some stuff here for time but feel free to come back to the slides on your own time
-:)
+I'm gonna keep this really high level, but feel free to ask me questions or see bonus
+slides at the end on your own time :)
 :::
 
 
@@ -140,41 +141,6 @@ Many players!!!
 
 :::::::::
 
-
-## Our values
-
-:::evenly-spaced
-:open_hands: **Open source & open science** - geospatial data is important to everyone!
-
-:cartwheeling: **Approachability** and **playfulness**, like desktop GIS tools
-
-:feather: **Flexibility** and **reproducibility**, like coding methods
-
-:performing_arts: **Collaboration** and **storytelling**, like Jupyter Notebooks
-:::
-
-
-## GeoJupyter community overview {.smaller}
-
-### Geospatial data practice for the modern era
-
-**Geospatial data is everywhere and matters for everyone! 🚚🚢🗺️🧪🌏**
-
-:::evenly-spaced
-:handshake: Real-time collaboration (like Google Docs)
-
-:recycle: Reproducibility (by default!)
-
-:leaves: Accessibility (transition to new ways of working, including reproducibility)
-
-:cloud: **Cloud-native** (computing, data formats)
-
-:robot: AI :scream: :boom: (risks & opportunities)
-
-<br />
-<br />
-:::
-
 ## GeoJupyter community overview {.smaller}
 
 ### Open, participatory development
@@ -191,23 +157,6 @@ Many players!!!
 <br />
 <br />
 :::
-
-
-## GeoJupyter community overview {.smaller}
-
-### Partners :scientist: :teacher: :technologist:
-
-* QuantStack - Open source for science
-* Maryam Hosseini - urban systems, computer vision, & open source
-* Clancy Wilmott - Critical Cartography, Geovisualisation and Design
-* Qiusheng Wu - Geospatial, AI, & education
-* Sarah Chasins & Parker Zeigler - cartography, CS, & open source
-* Nancy Thomas & Iryna Dronova - Berkeley Geospatial Innovation Facility
-* Carl Boettiger - Geospatial, AI, & education
-* Benny Szeghy & Esha Potharaju - GeoJupyter interns
-* Friends & neighbors: BIDS, MyST, JupyterHub, earthaccess, DevSeed, Pangeo, 2i2c, Clark
-  University, Stanford, Simula, CNES, ESA
-* **MANY MORE!!!**
 
 
 # :building_construction: Projects in the GeoJupyter community
@@ -524,3 +473,60 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
 
 
 # :heart: Thank you! :heart:
+
+
+# :tada: Bonus slides
+
+
+## GeoJupyter community overview {.smaller}
+
+## Our values
+
+:::evenly-spaced
+:open_hands: **Open source & open science** - geospatial data is important to everyone!
+
+:cartwheeling: **Approachability** and **playfulness**, like desktop GIS tools
+
+:feather: **Flexibility** and **reproducibility**, like coding methods
+
+:performing_arts: **Collaboration** and **storytelling**, like Jupyter Notebooks
+:::
+
+
+## GeoJupyter community overview {.smaller}
+
+### Geospatial data practice for the modern era
+
+**Geospatial data is everywhere and matters for everyone! 🚚🚢🗺️🧪🌏**
+
+:::evenly-spaced
+:handshake: Real-time collaboration (like Google Docs)
+
+:recycle: Reproducibility (by default!)
+
+:leaves: Accessibility (transition to new ways of working, including reproducibility)
+
+:cloud: **Cloud-native** (computing, data formats)
+
+:robot: AI :scream: :boom: (risks & opportunities)
+
+<br />
+<br />
+:::
+
+
+## GeoJupyter community overview {.smaller}
+
+### Partners :scientist: :teacher: :technologist:
+
+* QuantStack - Open source for science
+* Maryam Hosseini - urban systems, computer vision, & open source
+* Clancy Wilmott - Critical Cartography, Geovisualisation and Design
+* Qiusheng Wu - Geospatial, AI, & education
+* Sarah Chasins & Parker Zeigler - cartography, CS, & open source
+* Nancy Thomas & Iryna Dronova - Berkeley Geospatial Innovation Facility
+* Carl Boettiger - Geospatial, AI, & education
+* Benny Szeghy & Esha Potharaju - GeoJupyter interns
+* Friends & neighbors: BIDS, MyST, JupyterHub, earthaccess, DevSeed, Pangeo, 2i2c, Clark
+  University, Stanford, Simula, CNES, ESA
+* **MANY MORE!!!**
