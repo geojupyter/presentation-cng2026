@@ -315,10 +315,14 @@ The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-s
 
 ## Jupyter Tiler
 
+A building block for interactively exploring Xarray data.
+
+:tada: [Available to try now in JupyterGIS](https://jupytergis.readthedocs.io/en/latest/user_guide/python_api/api.html#jupytergis.GISDocument.add_data_array_layer)!
+
 ![A diagram of `jupyter-tiler`](/assets/images/jupyter-tiler-diagram.svg)
 
 
----
+## Jupyter Tiler
 
 ![Animation of an Xarray-computed layer with `jupytergis-tiler`](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LoISLf6L4GKZZgl2a9jlew.gif)
 
