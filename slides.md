@@ -495,6 +495,12 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
 
 :teacher: Example datasets for education?
 ([initiative](https://github.com/geojupyter/initiatives/issues/9))
-
-
 :::
+
+
+## How you can participate
+
+{{< include _join.md >}}
+
+
+# :heart: Thank you! :heart:
