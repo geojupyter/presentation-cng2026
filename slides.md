@@ -402,9 +402,16 @@ tile pyramids.
 
 ### Overviews
 
-Problem: A _computation_ on an Xarray dataset is still performed at full resolution.
+:::evenly-spaced
+**Problem**: A _computation_ on an Xarray dataset is still performed at full resolution.
 
-For a tight viz-analysis feedback loop, you might want to compute on overviews.
+For a tight viz-analysis feedback loop, we might want to compute on overviews.
+:::
+
+:::notes
+For responsive visualization, it's really important to not compute pixels we're not
+capable of displaying on-screen.
+:::
 
 
 ## Jupyter Tiler - current limitations {.smaller}
