@@ -459,6 +459,13 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
 :::
 
 
+## JupyterGIS with OpenEO (WIP)
+
+Another approach: server-side execution!
+
+![An OpenEO layer and process graph in JupyterGIS](/assets/images/jupytergis-openeo.jpg)
+
+
 ## How you can participate
 
 {{< include _join.md >}}
