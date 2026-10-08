@@ -337,8 +337,11 @@ We haven't quite nailed this in the open source ecosystem yet.
 
 ...
 
-GEE achieves this through efficient use of overviews, not just by throwing hardware at
-the problem.
+GEE achieves this through efficient use of overviews -- depending on the requested
+output scale, the appropriate resolution of input data is used.
+
+In other words, if the map is zoomed all the way out, computation is performed on the
+lowest resolution overview.
 :::
 
 
