@@ -331,7 +331,9 @@ Many researchers use GEE because of its strong and _accessible_ visualization-an
 
 GEE is expensive and subjects users to vendor lock-in.
 
-We haven't quite nailed this in the open source & cloud-native ecosystems yet.
+We haven't quite nailed this in the open source ecosystem yet.
+
+**The cloud-native pieces are there, but the user experience isn't there yet**.
 
 ...
 
