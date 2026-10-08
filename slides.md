@@ -166,6 +166,12 @@ Many players!!!
 
 ![A screenshot of JupyterGIS](/assets/images/jupytergis-screenshot.jpg)
 
+:::notes
+...
+
+The development of JupyterGIS has been led by QuantStack.
+:::
+
 
 ## :handshake: Collaborate
 
