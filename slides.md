@@ -457,18 +457,26 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
 ::::::
 
 :::notes
-* This new complexity and cognitive load is unnecessary friction for something a
-  researcher would expect to "just work" -- if my data has overviews, why can't I
-  visualize with my overviews?
-* Imagine if the existing `Dataset` API had awareness of the presence of overviews and
-  would allow extremely granular computations. E.g. "compute NDVI for a small coordinate
-  bounding box at max resolution" or "compute NDVI for the whole dataset using the
-  coarsest overview".
-* How do we build this? Is this a bad idea? Is this feasible? How can we fund the work?
-  Does this fit in Xarray or is it a new thing?
-  We're looking to y'all for feedback on this idea.
-  Find me and let's chat or please reach out post-conference :)
-  If you saw Joe Hamman's lightning talk about Zax yesterday, that might be one pathway.
+This new complexity and cognitive load is unnecessary friction for something a
+researcher would expect to "just work" -- if my data has overviews, why can't I
+visualize with my overviews?
+
+...
+
+Imagine if the existing `Dataset` API had awareness of the presence of overviews and
+would allow extremely granular computations. E.g. "compute NDVI for a small coordinate
+bounding box at max resolution" or "compute NDVI for the whole dataset using the
+coarsest overview".
+
+...
+
+How do we build this? Is this a bad idea? Is this feasible? How can we fund the work?
+Does this fit in Xarray or is it a new thing?
+
+If you saw Joe Hamman's lightning talk about Zax yesterday, that might be one pathway.
+
+We're looking to y'all for feedback on this idea.
+Find me and let's chat or please reach out post-conference :)
 :::
 
 
