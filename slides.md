@@ -417,19 +417,24 @@ def add_ndvi(ds):
 dt = dt.map_over_datasets(add_ndvi)
 ```
 
-[xpublish-tiles](https://github.com/earth-mover/xpublish-tiles) can do something like
-this (if handed the appropriate `DataTree` object)
+[xpublish-tiles](https://github.com/earth-mover/xpublish-tiles) can generate tiles from
+these `DataTree` objects
 :::
 
 :::notes
-* `Dataset` is single-resolution. You can request a specific overview level at open
-  time only.
-* You could build a GeoZarr-style multiscale DataTree for a single object that knows
-  about the overviews.
-  xpublish-tiles can do this!
-* To do a computation, you can map a function to add an NDVI task graph to each dataset
-  in the tree.
-  xpublish-tiles can do this but you need to hand it a multiscale `DataTree` object.
+`Dataset` is single-resolution. You can request a specific overview level at open
+time only.
+
+...
+
+You could build a GeoZarr-style multiscale DataTree for a single object that knows
+about the overviews.
+
+...
+
+To do a computation, you can map a function to add a task graph to each dataset in the
+tree.
+xpublish-tiles can work with this.
 :::
 
 
