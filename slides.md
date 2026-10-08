@@ -26,9 +26,9 @@ format:
 
 ## :wave: Hi, I'm Matt! Website: [`mattz.cool`](https://mattz.cool) {.smaller .even-smaller-header}
 
-:::::::::columns
-::::::{.column width=50%}
-:::evenly-spaced
+::::::::::::columns
+:::::::::{.column width=50%}
+::::::evenly-spaced
 :computer: Research Software Engineer ([RSE](https://us-rse.org/))
 
 :people_holding_hands: Community builder
@@ -46,8 +46,13 @@ more!
 
 :open_hands: :open_book: :brain:
 :seedling: :notes: :drum: :musical_keyboard: :dog:
+
+
+:::fragment
+:dog: :dog: :dog: :dog: :dog::dog: :dog: :dog: :dog: :dog: :dog: :dog:
 :::
 ::::::
+:::::::::
 
 ::::::{.column width=50%}
 ![[geojupyter.github.io/presentation-cng2026](https://geojupyter.github.io/presentation-cng2026)](/assets/images/qr.svg){width=100%}
