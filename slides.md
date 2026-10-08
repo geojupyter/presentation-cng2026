@@ -470,6 +470,15 @@ Another approach: server-side execution!
 
 ![An OpenEO layer and process graph in JupyterGIS](/assets/images/jupytergis-openeo.jpg)
 
+:::notes
+The approach we just discussed is client-side.
+
+We're also working on an approach using OpenEO to submit tasks (as graphs) to an OpenEO
+backend, ideally positioned close to the data.
+
+Guillaume to add more?
+:::
+
 
 ## How you can participate in GeoJupyter
 
