@@ -246,13 +246,13 @@ The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-s
 
 > ...the majority use between 3 and 8 tools to get work done
 
-- page 35
+page 35
 
 . . .
 
 > **Cloud-native** has become non-negotiable
 
-- page 23 (emphasis added)
+page 23 (emphasis added)
 
 :::notes
 ...
@@ -436,7 +436,7 @@ this
 
 ::::::evenly-spaced
 :face_with_peeking_eye: That was unfamiliar.
-A user wouldn't know they need do this.
+A user wouldn't know they need to do this.
 
 :::fragment
 :sparkles: Imagine: Familiar Xarray `Dataset`s (or similar objects) that are aware of overviews
@@ -454,7 +454,7 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
   visualize with my overviews?
 * Imagine if the existing `Dataset` API had awareness of the presence of overviews and
   would allow extremely granular computations. E.g. "compute NDVI for a small coordinate
-  bounding box at max resolution" or "computer NDVI for the whole dataset using the
+  bounding box at max resolution" or "compute NDVI for the whole dataset using the
   coarsest overview".
 * How do we build this? Is this a bad idea? Is this feasible? How can we fund the work?
   Does this fit in Xarray or is it a new thing?
