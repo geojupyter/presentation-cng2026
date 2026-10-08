@@ -220,6 +220,15 @@ This is a work in progress that will continue to evolve over time!
 :::
 
 
+## :open_book: Tell a story
+
+![Viewing a story map created in JupyterGIS](/assets/images/jupytergis-story-maps.gif)
+
+:::notes
+JupyterGIS also has a story builder interface for building map-driven stories.
+:::
+
+
 ## Experiment: reproducible viz -> Notebook workflows
 
 ![Reproducible workflow from viz-land to Notebook-land (:clap: Benny & Esha!)](assets/images/reproducible-viz-to-notebook-workflow.gif)
