@@ -322,7 +322,7 @@ We'll show more about this in the demo.
 Google Earth Engine UX with open source tools?
 
 :::fragment
-Secret sauce is [using **overviews** efficiently](https://developers.google.com/earth-engine/guides/scale), not infrastructure
+Secret sauce is [using **overviews** efficiently](https://developers.google.com/earth-engine/guides/scale)
 :::
 ::::::
 
