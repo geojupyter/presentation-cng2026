@@ -166,6 +166,12 @@ Many players!!!
 
 ![A screenshot of JupyterGIS](/assets/images/jupytergis-screenshot.jpg)
 
+:::notes
+...
+
+The development of JupyterGIS has been led by QuantStack.
+:::
+
 
 ## :handshake: Collaborate
 
@@ -220,6 +226,15 @@ This is a work in progress that will continue to evolve over time!
 :::
 
 
+## :open_book: Tell a story
+
+![Viewing a story map created in JupyterGIS](/assets/images/jupytergis-story-maps.gif)
+
+:::notes
+JupyterGIS also has a story builder interface for building map-driven stories.
+:::
+
+
 ## Experiment: reproducible viz -> Notebook workflows
 
 ![Reproducible workflow from viz-land to Notebook-land (:clap: Benny & Esha!)](assets/images/reproducible-viz-to-notebook-workflow.gif)
@@ -231,13 +246,13 @@ The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-s
 
 > ...the majority use between 3 and 8 tools to get work done
 
-- page 35
+page 35
 
 . . .
 
 > **Cloud-native** has become non-negotiable
 
-- page 23 (emphasis added)
+page 23 (emphasis added)
 
 :::notes
 ...
@@ -307,7 +322,7 @@ We'll show more about this in the demo.
 Google Earth Engine UX with open source tools?
 
 :::fragment
-Secret sauce is [using **overviews** efficiently](https://developers.google.com/earth-engine/guides/scale), not infrastructure
+Secret sauce is [using **overviews** efficiently](https://developers.google.com/earth-engine/guides/scale)
 :::
 ::::::
 
@@ -316,12 +331,17 @@ Many researchers use GEE because of its strong and _accessible_ visualization-an
 
 GEE is expensive and subjects users to vendor lock-in.
 
-We haven't quite nailed this in the open source & cloud-native ecosystems yet.
+We haven't quite nailed this in the open source ecosystem yet.
+
+**The cloud-native pieces are there, but the user experience isn't there yet**.
 
 ...
 
-GEE achieves this through efficient use of overviews, not just by throwing hardware at
-the problem.
+GEE achieves this through efficient use of overviews -- depending on the requested
+output scale, the appropriate resolution of input data is used.
+
+In other words, if the map is zoomed all the way out, computation is performed on the
+lowest resolution overview.
 :::
 
 
@@ -395,7 +415,7 @@ dt = dt.map_over_datasets(add_ndvi)
 ```
 
 [xpublish-tiles](https://github.com/earth-mover/xpublish-tiles) can do something like
-this
+this (if handed the appropriate `DataTree` object)
 :::
 
 :::notes
@@ -416,7 +436,7 @@ this
 
 ::::::evenly-spaced
 :face_with_peeking_eye: That was unfamiliar.
-A user wouldn't know they need do this.
+A user wouldn't know they need to do this.
 
 :::fragment
 :sparkles: Imagine: Familiar Xarray `Dataset`s (or similar objects) that are aware of overviews
@@ -434,7 +454,7 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
   visualize with my overviews?
 * Imagine if the existing `Dataset` API had awareness of the presence of overviews and
   would allow extremely granular computations. E.g. "compute NDVI for a small coordinate
-  bounding box at max resolution" or "computer NDVI for the whole dataset using the
+  bounding box at max resolution" or "compute NDVI for the whole dataset using the
   coarsest overview".
 * How do we build this? Is this a bad idea? Is this feasible? How can we fund the work?
   Does this fit in Xarray or is it a new thing?
@@ -444,30 +464,14 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
 :::
 
 
-## [Future](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)?
+## JupyterGIS with OpenEO (WIP)
 
-:::evenly-spaced
-:open_book: "Scrollytelling" with a Markdown authoring workflow?
-([initiative](https://github.com/geojupyter/initiatives/issues/19))
+Another approach: server-side execution!
 
-:robot: GeoAI? :thinking:
-([initiative](https://github.com/geojupyter/initiatives/issues/14), [prototype](https://github.com/geojupyter/jupyter-geoagent),
-[talk](https://www.youtube.com/watch?v=_5yuXU5salY))
-
-:rock: Richer geospatial primitives for Python?
-([initiative](https://github.com/geojupyter/initiatives/issues/18))
-
-:mountain: Reproducible GUI "geoprocessing" (following lessons learned from interns' exploration)? ([initiative](https://github.com/geojupyter/initiatives/issues/3))
-
-:art: Reusable symbology editor component?
-([initiative](https://github.com/geojupyter/initiatives/issues/8))
-
-:teacher: Example datasets for education?
-([initiative](https://github.com/geojupyter/initiatives/issues/9))
-:::
+![An OpenEO layer and process graph in JupyterGIS](/assets/images/jupytergis-openeo.jpg)
 
 
-## How you can participate
+## How you can participate in GeoJupyter
 
 {{< include _join.md >}}
 
@@ -530,3 +534,26 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
 * Friends & neighbors: BIDS, MyST, JupyterHub, earthaccess, DevSeed, Pangeo, 2i2c, Clark
   University, Stanford, Simula, CNES, ESA
 * **MANY MORE!!!**
+
+
+## [Potential future initiatives](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)?
+
+:::evenly-spaced
+:open_book: "Scrollytelling" with a Markdown authoring workflow?
+([initiative](https://github.com/geojupyter/initiatives/issues/19))
+
+:robot: GeoAI? :thinking:
+([initiative](https://github.com/geojupyter/initiatives/issues/14), [prototype](https://github.com/geojupyter/jupyter-geoagent),
+[talk](https://www.youtube.com/watch?v=_5yuXU5salY))
+
+:rock: Richer geospatial primitives for Python?
+([initiative](https://github.com/geojupyter/initiatives/issues/18))
+
+:mountain: Reproducible GUI "geoprocessing" (following lessons learned from interns' exploration)? ([initiative](https://github.com/geojupyter/initiatives/issues/3))
+
+:art: Reusable symbology editor component?
+([initiative](https://github.com/geojupyter/initiatives/issues/8))
+
+:teacher: Example datasets for education?
+([initiative](https://github.com/geojupyter/initiatives/issues/9))
+:::
