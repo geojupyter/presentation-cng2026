@@ -390,11 +390,6 @@ tile pyramids.
 For a tight viz-analysis feedback loop, we might want to compute on overviews.
 :::
 
-:::notes
-For responsive visualization, it's really important to not compute pixels we're not
-capable of displaying on-screen.
-:::
-
 
 ## Jupyter Tiler - current limitations {.smaller}
 
