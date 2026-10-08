@@ -459,29 +459,6 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
 :::
 
 
-## [Future](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)?
-
-:::evenly-spaced
-:open_book: "Scrollytelling" with a Markdown authoring workflow?
-([initiative](https://github.com/geojupyter/initiatives/issues/19))
-
-:robot: GeoAI? :thinking:
-([initiative](https://github.com/geojupyter/initiatives/issues/14), [prototype](https://github.com/geojupyter/jupyter-geoagent),
-[talk](https://www.youtube.com/watch?v=_5yuXU5salY))
-
-:rock: Richer geospatial primitives for Python?
-([initiative](https://github.com/geojupyter/initiatives/issues/18))
-
-:mountain: Reproducible GUI "geoprocessing" (following lessons learned from interns' exploration)? ([initiative](https://github.com/geojupyter/initiatives/issues/3))
-
-:art: Reusable symbology editor component?
-([initiative](https://github.com/geojupyter/initiatives/issues/8))
-
-:teacher: Example datasets for education?
-([initiative](https://github.com/geojupyter/initiatives/issues/9))
-:::
-
-
 ## How you can participate
 
 {{< include _join.md >}}
@@ -545,3 +522,26 @@ and capable of _computing_ on overviews if explicitly requested (e.g. by a tile 
 * Friends & neighbors: BIDS, MyST, JupyterHub, earthaccess, DevSeed, Pangeo, 2i2c, Clark
   University, Stanford, Simula, CNES, ESA
 * **MANY MORE!!!**
+
+
+## [Potential future initiatives](https://github.com/geojupyter/initiatives/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22type%3A%20initiative%22)?
+
+:::evenly-spaced
+:open_book: "Scrollytelling" with a Markdown authoring workflow?
+([initiative](https://github.com/geojupyter/initiatives/issues/19))
+
+:robot: GeoAI? :thinking:
+([initiative](https://github.com/geojupyter/initiatives/issues/14), [prototype](https://github.com/geojupyter/jupyter-geoagent),
+[talk](https://www.youtube.com/watch?v=_5yuXU5salY))
+
+:rock: Richer geospatial primitives for Python?
+([initiative](https://github.com/geojupyter/initiatives/issues/18))
+
+:mountain: Reproducible GUI "geoprocessing" (following lessons learned from interns' exploration)? ([initiative](https://github.com/geojupyter/initiatives/issues/3))
+
+:art: Reusable symbology editor component?
+([initiative](https://github.com/geojupyter/initiatives/issues/8))
+
+:teacher: Example datasets for education?
+([initiative](https://github.com/geojupyter/initiatives/issues/9))
+:::
