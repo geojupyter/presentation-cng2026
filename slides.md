@@ -464,9 +464,9 @@ visualize with my overviews?
 ...
 
 Imagine if the existing `Dataset` API had awareness of the presence of overviews and
-would allow extremely granular computations. E.g. "compute NDVI for a small coordinate
-bounding box at max resolution" or "compute NDVI for the whole dataset using the
-coarsest overview".
+would allow overview-aware computations.
+E.g. "compute NDVI for a small coordinate bounding box at max resolution" or "compute
+NDVI for the whole dataset using the coarsest overview".
 
 ...
 
