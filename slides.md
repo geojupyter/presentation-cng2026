@@ -484,7 +484,7 @@ Another approach: server-side execution!
 
 ## GeoJupyter community overview {.smaller}
 
-## Our values
+### Our values
 
 :::evenly-spaced
 :open_hands: **Open source & open science** - geospatial data is important to everyone!
