@@ -13,7 +13,7 @@ authors:
       - "Centre National d'Etudes Spatiales (CNES)"
 title-slide-attributes:
   data-notes: |
-    Good morning!
+    Good afternoon!
 format:
   revealjs:
     from: "markdown+emoji"
