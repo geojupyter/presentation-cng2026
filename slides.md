@@ -466,7 +466,7 @@ Another approach: server-side execution!
 ![An OpenEO layer and process graph in JupyterGIS](/assets/images/jupytergis-openeo.jpg)
 
 
-## How you can participate
+## How you can participate in GeoJupyter
 
 {{< include _join.md >}}
 
