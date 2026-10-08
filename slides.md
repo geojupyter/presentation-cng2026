@@ -415,7 +415,7 @@ dt = dt.map_over_datasets(add_ndvi)
 ```
 
 [xpublish-tiles](https://github.com/earth-mover/xpublish-tiles) can do something like
-this
+this (if handed the appropriate `DataTree` object)
 :::
 
 :::notes
