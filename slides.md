@@ -56,6 +56,9 @@ more!
 
 
 :::notes
+QR code: These slides! There will be links you may want to follow and bonus slides you
+may want to see on your own time.
+
 Emojis: Open source, documentation, optimizing for cognitive load, plants and nature,
 musical instruments, dogs!
 :::
