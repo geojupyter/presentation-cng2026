@@ -33,10 +33,11 @@ format:
 [jupytergis](https://github.com/geojupyter/jupytergis),
 [jupyter-widgets](https://github.com/jupyter-widgets),
 [jupyterlite](https://github.com/jupyterlite),
+[jupytercad](https://github.com/jupytercad),
 several [conda-forge](https://conda-forge.org/) packages
 and more!
 
-[Notebook.link](https://github.com/notebook-link)
+Currently working on [Notebook.link](https://github.com/notebook-link)
 
 ::::::
 :::::::::
@@ -80,7 +81,7 @@ musical instruments, dogs!
 ::::::
 
 ::::::{.column width=50%}
-![[geojupyter.github.io/presentation-cng2026](https://geojupyter.github.io/presentation-cng2026)](/assets/images/qr.svg){width=100%}
+![[geojupyter.github.io/presentation-compute-paris2026](https://geojupyter.github.io/presentation-compute-paris2026)](/assets/images/qr.svg){width=100%}
 ::::::
 :::::::::
 
@@ -104,21 +105,11 @@ I'm gonna keep this really high level, but feel free to ask me questions or see 
 slides at the end on your own time :)
 :::
 
-# :building_construction: Projects in the GeoJupyter community
-
-
 # JupyterGIS
 
 ![A screenshot of JupyterGIS](/assets/images/jupytergis-screenshot.jpg)
 
 ## JupyterGIS
-
-<!-- - Started from an [European Space Agency (ESA)](https://www.esa.int) fund: “Real-time collaboration and collaborative editing for GIS workflows with Jupyter and QGIS.”
-- Multiple fundings from [Centre National d'Etudes Spatiales (CNES)](https://cnes.fr/en)
-- Development led by [QuantStack](https://quantstack.net), in collaboration with:
-  - [Schmidt DSE @ UC Berkeley](https://dse.berkeley.edu)
-  - [Simula Research Lab](https://www.simula.no)
-  - [developmentSEED](https://developmentseed.org) -->
 
 <div class="funding-item">
   <p>
@@ -146,71 +137,20 @@ slides at the end on your own time :)
   <li><a href="https://developmentseed.org">developmentSEED</a></li>
 </ul>
 
-## :handshake: Collaborate
+## JupyterGIS highlights
 
-![Two users collaborating in real-time on a JupyterGIS project ([QuantStack](https://quantstack.net/slides))](/assets/images/jupytergis-collab-cursors.gif){width=100%}
+- Integrated in <b>Jupyter</b> (JupyterLab, Jupyter Notebook, JupyterLite...)
+- <b>Collaborative GIS</b> with jupyter-collaboration
+- Support for <b>QGIS</b> files opening with the associated server-extension
+- Storymaps (scrollytelling)
+- Collaborative labeling
+- Exploring <b>OpenEO</b> graphs
+- STAC search
+- and many more...
 
-:::notes
-Thanks again to the modular Jupyter architecture, we can leverage
-the `jupyter-collaboration` extension, which enables real-time collaboration on
-Notebooks, to enable real-time collaboration on a map.
+## JupyterGIS demo
 
-Here you can see two users' cursors (emphasized for visibility) on the same map.
-:::
-
-
-## :handshake: Collaborate: Follow a user
-
-![One user following another in real-time on a JupyterGIS project ([QuantStack](https://quantstack.net/slides))](/assets/images/jupytergis-collab-follow.gif){width=100%}
-
-:::notes
-In this graphic, one user is following another user's viewport activity in real time.
-:::
-
-
-## :handshake: Collaborate: Edit together
-
-![Two users editing a shared map ([QuantStack](https://quantstack.net/slides))](/assets/images/jupytergis-collab-edit.gif){width=100%}
-
-:::notes
-Here you can see collaborators editing a shared map.
-:::
-
-
-## :handshake: Collaborate: Annotations
-
-![Two users having a conversation with spatial context through annotations ([QuantStack](https://quantstack.net/slides))](/assets/images/jupytergis-collab-annotate.gif){width=100%}
-
-:::notes
-Here you can see collaborators having a spatially aware conversation, like
-comments in Google Docs.
-:::
-
-
-## :crystal_ball: Discover data with STAC (WIP)
-
-![Browsing a STAC catalog in JupyterGIS ([eo science for society blog](https://eo4society.esa.int/2025/10/16/jupytergis-breaks-through-to-the-next-level/))](https://eo4society.esa.int/wp-content/uploads/2025/10/screenshot-5.png)
-
-:::notes
-We can discover data using Spatio Temporal Asset Catalogs, or "STAC catalogs",
-a modern standard for computer interface with data catalogs.
-
-This is a work in progress that will continue to evolve over time!
-:::
-
-
-## :open_book: Tell a story
-
-![Viewing a story map created in JupyterGIS](/assets/images/jupytergis-story-maps.gif)
-
-:::notes
-JupyterGIS also has a story builder interface for building map-driven stories.
-:::
-
-
-## Experiment: reproducible viz -> Notebook workflows
-
-![Reproducible workflow from viz-land to Notebook-land (:clap: Benny & Esha!)](assets/images/reproducible-viz-to-notebook-workflow.gif)
+Enough talking! 🫢
 
 ## Jupyter Tiler
 
@@ -273,9 +213,9 @@ lowest resolution overview.
 # :tada: Demo time
 
 
-## :rotating_light: Emergency video, ignore me
+<!-- ## :rotating_light: Emergency video, ignore me
 
-{{<video https://youtu.be/uwNzWU6aBnI width="100%" height="85%">}}
+{{<video https://youtu.be/uwNzWU6aBnI width="100%" height="85%">}} -->
 
 
 ## Jupyter Tiler - current limitations
