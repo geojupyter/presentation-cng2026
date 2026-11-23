@@ -1,7 +1,5 @@
 ---
 title: "🌐 Using geojupyter community tools for earth data analysis and visualization at scale in the context of Snow Detection 🌐 <br/>@Compute! Paris 2026<br/>"
-subtitle: |
-  _Exploring more approachable geospatial data workflows as a community_
 authors:
   - name: "Martin Renou"
     orcid: "0009-0002-3422-9156"
@@ -43,7 +41,7 @@ and more!
 :::::::::
 
 ::::::{.column width=50%}
-![[geojupyter.github.io/presentation-cng2026](https://geojupyter.github.io/presentation-cng2026)](/assets/images/qr.svg){width=100%}
+![[geojupyter.github.io/presentation-compute-paris2026](https://github.com/geojupyter/presentation-compute-paris2026)](/assets/images/qr.svg){width=100%}
 ::::::
 :::::::::
 
