@@ -8,9 +8,9 @@ Cloud-native technologies and standards are creating new possibilities for geosp
 
 In this talk, we will present specific work from the GeoJupyter community, based on JupyterGIS for the frontend and TiTiler for the backend, to enable interactive computation at scale.
 
-We'll first give the big picture: the challenge of working with and vizualising the Peta scale datasets in an open and standard way, and how we are closer to building an open source alternative to GEE.
+We'll first give the big picture: the challenge of working with and visualising the Peta scale datasets in an open and standard way, and how we are closer to building an open source alternative to GEE.
 
-We'll then dive into tools under active developement such as [JupyterGIS](https://github.com/geojupyter/jupytergis) and [Titiler](https://github.com/developmentseed/titiler), show casing their functionnalities and roadmaps. Addtionally, we will show the ease of deployment of JupyterGIS by making use of tools like [JupyterLite](https://github.com/jupyterlite/jupyterlite) and [Notebook.link](https://notebook.link/).
+We'll then dive into tools under active development such as [JupyterGIS](https://github.com/geojupyter/jupytergis) and [Titiler](https://github.com/developmentseed/titiler), show casing their functionalities and roadmaps. Additionally, we will show the ease of deployment of JupyterGIS by making use of tools like [JupyterLite](https://github.com/jupyterlite/jupyterlite) and [Notebook.link](https://notebook.link/).
 
 We'll then demonstrate a [CNES (French space agency)](https://cnes.fr/en) use case for snow detection over the Pyrenees mountains. It shows how these technologies can interactively display the results of a computation performed on-the-fly on geospatial data streamed from cloud-optimized and open Sentinel-2 data.
 We'll compare alternative methods, including:
