@@ -1,12 +1,12 @@
 ---
-title: "🌐 GeoJupyter 🌐<br/>@<br/>🌥️ CNG '26 🌥️"
+title: "🌐 Using geojupyter community tools for earth data analysis and visualization at scale in the context of Snow Detection 🌐<br/>@<br/>Compute! Paris 2026"
 subtitle: |
   _Exploring more approachable geospatial data workflows as a community_
 authors:
-  - name: "Matt Fisher"
-    orcid: "0000-0003-3260-5445"
+  - name: "Martin Renou"
+    orcid: "0009-0002-3422-9156"
     affiliations:
-      - "Schmidt DSE @ UC Berkeley"
+      - "QuantStack"
   - name: "Guillaume Eynard-Bontemps"
     orcid: "0000-0002-5210-0164"
     affiliations:
@@ -19,7 +19,7 @@ format:
     from: "markdown+emoji"
     theme: "white"
     css: "assets/css/slides.css"
-    footer: "[Home](/) | [Source](https://github.com/geojupyter/presentation-cng2026) | [geojupyter.org](https://geojupyter.org)"
+    footer: "[Home](/) | [Source](https://github.com/geojupyter/presentation-compute-paris2026) | [geojupyter.org](https://geojupyter.org)"
     auto-stretch: true
     slide-number: true
 ---

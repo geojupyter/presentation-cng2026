@@ -1,10 +1,10 @@
 [workspace]
 authors = [
-  "Matt Fisher <mfisher87@gmail.com>",
+  "Martin Renou",
   "Guillaume Eynard-Bontemps",
 ]
 channels = ["conda-forge"]
-name = "presentation-cng2026"
+name = "compute-paris2026"
 platforms = ["linux-64"]
 version = "0.1.0"
 
