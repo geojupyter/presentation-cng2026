@@ -24,33 +24,21 @@ format:
     slide-number: true
 ---
 
-## :wave: Hi, I'm Matt! Website: [`mattz.cool`](https://mattz.cool) {.smaller .even-smaller-header}
+## :wave: Hi, I'm Martin! Github: [`martinRenou`]([guillaumeeb](https://github.com/martinRenou)) {.smaller .even-smaller-header}
 
 ::::::::::::columns
 :::::::::{.column width=50%}
 ::::::evenly-spaced
-:computer: Research Software Engineer ([RSE](https://us-rse.org/))
-
-:people_holding_hands: Community builder
+:computer: Technical Director [@QuantStack](https://quantstack.net)
 
 :open_hands: Open source maintainer & contributor:
 [jupytergis](https://github.com/geojupyter/jupytergis),
-[jupyter-tiler](https://github.com/geojupyter/jupyter-tiler),
-[earthaccess](https://github.com/nsidc/earthaccess),
-several [conda-forge](https://conda-forge.org/) packages,
-more!
+[jupyter-widgets](https://github.com/jupyter-widgets),
+[jupyterlite](https://github.com/jupyterlite),
+[Notebook.link](https://github.com/notebook-link),
+several [conda-forge](https://conda-forge.org/) packages
+and more!
 
-:bear: At [Schmidt DSE, UC Berkeley](https://dse.berkeley.edu/)
-
-:snowflake: Previously at [National Snow & Ice Data Center (NSIDC)](https://nsidc.org)
-
-:open_hands: :open_book: :brain:
-:seedling: :notes: :drum: :musical_keyboard: :dog:
-
-
-:::fragment
-:dog: :dog: :dog: :dog: :dog::dog: :dog: :dog: :dog: :dog: :dog: :dog:
-:::
 ::::::
 :::::::::
 
