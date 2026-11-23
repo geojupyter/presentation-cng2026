@@ -1,5 +1,5 @@
 ---
-title: "🌐 Using geojupyter community tools for earth data analysis and visualization at scale in the context of Snow Detection 🌐<br/>@<br/>Compute! Paris 2026"
+title: "🌐 Using geojupyter community tools for earth data analysis and visualization at scale in the context of Snow Detection 🌐 <br/>@Compute! Paris 2026<br/>"
 subtitle: |
   _Exploring more approachable geospatial data workflows as a community_
 authors:
