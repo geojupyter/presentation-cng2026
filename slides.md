@@ -33,9 +33,10 @@ format:
 [jupytergis](https://github.com/geojupyter/jupytergis),
 [jupyter-widgets](https://github.com/jupyter-widgets),
 [jupyterlite](https://github.com/jupyterlite),
-[Notebook.link](https://github.com/notebook-link),
 several [conda-forge](https://conda-forge.org/) packages
 and more!
+
+[Notebook.link](https://github.com/notebook-link)
 
 ::::::
 :::::::::
@@ -103,69 +104,47 @@ I'm gonna keep this really high level, but feel free to ask me questions or see 
 slides at the end on your own time :)
 :::
 
-
-## GeoJupyter community overview {.smaller}
-
-:::::::::columns
-
-::::::{.column width="48%"}
-:::elevator-pitch
-<br />
-<br />
-
-<hr />
-GeoJupyter is an open and community-owned effort to
-[reimagine geospatial interactive computing experiences _within the Jupyter architecture_]{.jupyter-orange}
-to enable more people to confidently engage with geospatial data.
-<hr />
-
-<br />
-<br />
-
-Many players!!!
-:::
-::::::
-
-::::::{.column width="4%"}
-::::::
-
-::::::{.column width="48%"}
-![GeoJupyter is **not** software; it’s a **community** which will build many things together!](/assets/images/venn-diagram.svg)
-::::::
-
-:::::::::
-
-## GeoJupyter community overview {.smaller}
-
-### Open, participatory development
-
-:::evenly-spaced
-:revolving_hearts: User-centered & user-led
-
-:hugs: Welcoming (like Jupyter)
-
-:flashlight: Exploring: finding & opening hidden doors
-
-:japanese_castle: Data & computational sovereignty
-
-<br />
-<br />
-:::
-
-
 # :building_construction: Projects in the GeoJupyter community
 
 
-## JupyterGIS
+# JupyterGIS
 
 ![A screenshot of JupyterGIS](/assets/images/jupytergis-screenshot.jpg)
 
-:::notes
-...
+## JupyterGIS
 
-The development of JupyterGIS has been led by QuantStack.
-:::
+<!-- - Started from an [European Space Agency (ESA)](https://www.esa.int) fund: “Real-time collaboration and collaborative editing for GIS workflows with Jupyter and QGIS.”
+- Multiple fundings from [Centre National d'Etudes Spatiales (CNES)](https://cnes.fr/en)
+- Development led by [QuantStack](https://quantstack.net), in collaboration with:
+  - [Schmidt DSE @ UC Berkeley](https://dse.berkeley.edu)
+  - [Simula Research Lab](https://www.simula.no)
+  - [developmentSEED](https://developmentseed.org) -->
 
+<div class="funding-item">
+  <p>
+    Started from an
+    <a href="https://www.esa.int">European Space Agency (ESA)</a>
+    fund: “Real-time collaboration and collaborative editing for GIS workflows with Jupyter and QGIS.”
+  </p>
+  <img src="assets/images/esa.jpeg" class="funding-logo esa-logo" />
+</div>
+
+<div class="funding-item">
+  <p>
+    Multiple fundings from
+    <a href="https://cnes.fr/en">Centre National d'Études Spatiales (CNES)</a>
+  </p>
+  <img src="assets/images/cnes.png" class="funding-logo cnes-logo" />
+</div>
+
+<p>
+  Development led by <a href="https://quantstack.net">QuantStack</a>, in collaboration with:
+</p>
+<ul>
+  <li><a href="https://dse.berkeley.edu">Schmidt DSE @ UC Berkeley</a></li>
+  <li><a href="https://www.simula.no">Simula Research Lab</a></li>
+  <li><a href="https://developmentseed.org">developmentSEED</a></li>
+</ul>
 
 ## :handshake: Collaborate
 
@@ -232,54 +211,6 @@ JupyterGIS also has a story builder interface for building map-driven stories.
 ## Experiment: reproducible viz -> Notebook workflows
 
 ![Reproducible workflow from viz-land to Notebook-land (:clap: Benny & Esha!)](assets/images/reproducible-viz-to-notebook-workflow.gif)
-
-
-## Jupyter Trail (prototyping!)
-
-The [2026 Carto State of Spatial Analytics report](https://go.carto.com/report-state-of-spatial-analytics-2026-carto):
-
-> ...the majority use between 3 and 8 tools to get work done
-
-page 35
-
-. . .
-
-> **Cloud-native** has become non-negotiable
-
-page 23 (emphasis added)
-
-:::notes
-...
-
-When working across 3 to 8 tools, it's very difficult to remember or track what you did, and in what order.
-
-Our ability to share, teach about, and reproduce our work all suffer.
-
-...
-
-And because we're at CNG, I wanted to highlight this other claim from the report :)
-:::
-
-
-## Jupyter Trail (prototyping!)
-
-A tool for tracking workflows across tools
-
-![A diagram of a "trail"](/assets/images/jupyter-trail-history-diagram.png)
-
-:::notes
-This diagram shows a hypothetical "trail" through multiple tools.
-
-Here the user has recorded their actions across several tools and curated this history.
-
-Highlight the meaningful part of their path (green line)
-
-De-emphasize their side-quests (faded)
-
-They might use this tool to help them reproduce and/or document their workflow for a
-publication.
-:::
-
 
 ## Jupyter Tiler
 

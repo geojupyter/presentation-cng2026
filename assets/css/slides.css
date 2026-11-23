@@ -36,3 +36,28 @@ section.even-smaller-header h2 {
 h3 {
   opacity: 0.7;
 }
+
+.reveal .funding-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.reveal .funding-item > div {
+  flex: 1;
+}
+
+.reveal .funding-logo {
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.reveal .esa-logo {
+  width: 250px;
+}
+
+.reveal .cnes-logo {
+  width: 150px;
+}
