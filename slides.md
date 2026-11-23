@@ -187,7 +187,13 @@ We'll show more about this in the demo.
 Google Earth Engine UX with open source tools?
 
 :::fragment
-Secret sauce is [using **overviews** efficiently](https://developers.google.com/earth-engine/guides/scale)
+### :tada: Demo time
+
+
+<!-- ## :rotating_light: Emergency video, ignore me
+
+{{<video https://youtu.be/uwNzWU6aBnI width="100%" height="85%">}} -->
+
 :::
 ::::::
 
@@ -209,18 +215,11 @@ In other words, if the map is zoomed all the way out, computation is performed o
 lowest resolution overview.
 :::
 
-
-# :tada: Demo time
-
-
-<!-- ## :rotating_light: Emergency video, ignore me
-
-{{<video https://youtu.be/uwNzWU6aBnI width="100%" height="85%">}} -->
-
-
 ## Jupyter Tiler - current limitations
 
 ### Overviews
+
+Secret sauce of GEE experience is [using **overviews** efficiently](https://developers.google.com/earth-engine/guides/scale)
 
 ![A visualization of overviews / tile pyramid.](/assets/images/tile-overviews-diagram.jpg)
 
@@ -250,95 +249,6 @@ tile pyramids.
 **Problem**: A _computation_ on an Xarray dataset is still performed at full resolution.
 
 For a tight viz-analysis feedback loop, we might want to compute on overviews.
-:::
-
-
-## Jupyter Tiler - current limitations {.smaller}
-
-### Overviews
-
-An open Xarray `Dataset` represents a single resolution -- no built-in concept of
-overviews
-
-:::fragment
-A `DataTree` can represent overviews!
-But the familiar way of doing computations is with a `Dataset` or `DataArray`.
-:::
-
-:::fragment
-Can technically map a computation across a `DataTree`!
-
-```python
-dt = xr.open_datatree("s3://.../some.zarr", ...)
-
-def add_ndvi(ds):
-    ...
-    ds["ndvi"] = (ds.nir - ds.red) / (ds.nir + ds.red)
-    return ds
-
-dt = dt.map_over_datasets(add_ndvi)
-```
-
-[xpublish-tiles](https://github.com/earth-mover/xpublish-tiles) can generate tiles from
-these `DataTree` objects
-:::
-
-:::notes
-`Dataset` is single-resolution. You can request a specific overview level at open
-time only.
-
-...
-
-You could build a GeoZarr-style multiscale DataTree for a single object that knows
-about the overviews.
-
-...
-
-To do a computation, you can map a function to add a task graph to each dataset in the
-tree.
-xpublish-tiles can work with this.
-:::
-
-
-## Jupyter Tiler - current limitations
-
-### Overviews
-
-::::::evenly-spaced
-:face_with_peeking_eye: That was unfamiliar.
-A user wouldn't know they need to do this.
-
-:::fragment
-:sparkles: Imagine: Familiar Xarray `Dataset`s (or similar objects) that are aware of overviews
-and capable of _computing_ on overviews if explicitly requested (e.g. by a tile server!)
-:::
-
-:::fragment
-:shrug: How?
-:::
-::::::
-
-:::notes
-This new complexity and cognitive load is unnecessary friction for something a
-researcher would expect to "just work" -- if my data has overviews, why can't I
-visualize with my overviews?
-
-...
-
-Imagine if the existing `Dataset` API had awareness of the presence of overviews and
-would allow overview-aware computations.
-E.g. "compute NDVI for a small coordinate bounding box at max resolution" or "compute
-NDVI for the whole dataset using the coarsest overview".
-
-...
-
-How do we build this? Is this a bad idea? Is this feasible? How can we fund the work?
-Does this fit in Xarray or is it a new thing?
-
-If you saw Joe Hamman's lightning talk about Zax yesterday, that might be one pathway.
-
-We're looking to y'all for feedback on this idea.
-Find me and let's chat or please reach out post-conference :)
 :::
 
 
